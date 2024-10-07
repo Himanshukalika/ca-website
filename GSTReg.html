@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui;
+
+        }
+
+
+        .main-center {
+            height: 550px;
+            width: 100%;
+            background: #e7717d;
+
+        }
+
+        .ICT {
+
+            background: #e7717d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+
+        .ICT p {
+
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-top: 200px;
+
+
+        }
+
+        .ICT .p2 {
+            font-size: 20px;
+            position: relative;
+            margin-top: 25px;
+        }
+
+        .ICT-btn {
+            position: relative;
+            margin-top: 45px;
+            margin-left: 550px;
+            width: 234px;
+            height: 55px;
+            font-size: 22px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-weight: 700;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+
+        }
+
+        .ICT-btn:hover {
+            background-color: #6747c7;
+        }
+
+        .form-main {
+            font-size: 35px;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+        }
+
+        .form-box {
+            height: 1150px;
+            width: 90%;
+            background-color: #f0f4ff;
+            margin: 20px 5% 0px 5%;
+        }
+
+        .form-ITF {
+            width: 700px;
+            height: 950px;
+            background-color: white;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            margin-left: 260px;
+            top: 70px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-header {
+            height: 140px;
+            width: 700px;
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid black;
+
+        }
+
+        .form-header h2 {
+
+            font-size: 32px;
+            width: 662px;
+            height: 47px;
+            position: relative;
+            left: 150px;
+            white-space: nowrap;
+        }
+
+        .form-header p {
+            font-size: 16px;
+            width: 662px;
+            height: 26px;
+            color: #57647E;
+            margin-top: 50px;
+            white-space: nowrap;
+            position: relative;
+            left: -250px;
+            margin-top: 80px;
+
+        }
+
+        .form-details {
+            width: 662px;
+            height: 300px;
+            position: relative;
+            top: 200px;
+            right: 450px;
+            white-space: nowrap;
+            font-size: 15px;
+            margin-top: 15px;
+            line-height: 30px;
+
+        }
+
+        form {
+            position: absolute;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            position: relative;
+            left: 120px;
+            top: 190px;
+            white-space: nowrap;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+            margin-bottom: 50px;
+            margin-left: 100px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 33%;
+            box-sizing: border-box;
+            position: relative;
+            margin-top: 30px;
+        }
+
+        .tooltip {
+            position: absolute;
+            top: -35px;
+            left: 5px;
+            background-color: #2c3e50;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+            display: none;
+        }
+
+        .form-group:hover .tooltip {
+            display: block;
+        }
+
+        small {
+            display: block;
+            margin-top: 39px;
+            color: #777;
+
+            position: relative;
+            right: 139px;
+        }
+
+
+        .radio-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .radio-group label {
+            margin-right: 10px;
+            margin-left: 5px;
+        }
+
+        button {
+            position: relative;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100px;
+            top: 260px;
+            right: 790px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 300px;
+            height: 100px;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: none;
+            position: relative;
+            right: 695px;
+            bottom: 100px;
+        }
+
+        .GST-Reg {
+            position: relative;
+            top: 210px;
+        }
+
+        .GST-Reg p {
+            margin-top: 20px;
+        }
+
+        .GST-Reg h1 {
+            margin-top: 20px;
+        }
+
+        .Filing-fee {
+            width: 1400px;
+            height: 400px;
+            background-color: #e7717d;
+            margin-top: 50px;
+            position: relative;
+            top: 200px;
+            right: 70px;
+            white-space: nowrap;
+        }
+
+        .list-container {
+            padding: 20px;
+            margin-left: 50px;
+            list-style-type: disc;
+            line-height: 2;
+            color: white;
+        }
+
+
+        .return {
+            font-size: 35px;
+            margin: 0px 0px 0px 30px;
+            padding: 50px 0px 20px;
+            color: white;
+            border-bottom: 2px solid white;
+            width: 550px;
+        }
+
+        .book-btn {
+            width: 150px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            margin: 20px 0px 0px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            cursor: pointer;
+
+        }
+
+        .GST-Fea {
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+
+        .GST-Fea p {
+            margin-right: 70px;
+            margin-top: 10px;
+            white-space: wrap;
+
+        }
+
+        .GST-Fea h1 {
+            margin-top: 20px;
+        }
+
+        strong {
+            white-space: wrap;
+            line-height: 2;
+        }
+    </style>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">
+                <div class="logo">MY Wealth</div> 
+               </a>
+            <ul class="nav-links">
+                <li><a href="ITF.html">Income Tax Filling</a></li>
+                <li><a href="Consultancy.html">Book Consultancy</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Popular Services &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="ITF.html">ITR Filing Services</a>
+                        <a href="ISO.html">ISO Certification</a>
+                        <a href="GSTReg.html">GST Registration</a>
+                        <a href="GSTFilling.html">GST Return Filing</a>
+                        <a href="MSME.html">MSME Registration</a>
+                        <a href="companyreg.html">Company Registration</a>
+                        <a href="firm.html">Firm Registration</a>
+                        <a href="fssai.html">FSSAI License</a>
+                        <a href="trademark.html">Trademark Registration</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Bussiness Registration &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="companyreg.html">Company Registration</a>
+                        <a href="firm.html">Firm Registration</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">GST Services &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="GSTReg.html">GST Registration</a>
+                        <a href="GSTFilling.html">GST Return Filing</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Support &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="#">Contact Us</a>
+            </ul>
+               
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+    </header>
+
+    <div class="main-center">
+        <div class="ICT">
+            <p>GST Registration – New GST Registration</p>
+            <p class="p2">India’s Only Govt Certified Company “MyOnlineCA” Helps on GST Registration | New GST
+                Registration Online
+                Start Only From 999/-INR with Free DIY Legal Agreements</p>
+
+            <div class="ICT-btn" onclick="scrollToSection()">
+                GET PROPOSAL &#9654
+            </div>
+
+        </div>
+    </div>
+
+    <div id="book1" class="form-main">
+        📅 Book Your Consultation Right Now
+    </div>
+
+    <div class="form-box">
+        <div class="form-ITF">
+            <div class="form-header">
+                <h2>Let's Start My GST Registration</h2>
+                <p>
+                    Issue over 30k+ GST Number across India</p>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label for="name" style="position: relative; left: 185px;">Name <span> * <style {color:red}></style>
+                    </label> <br>
+                    <input type="text" id="name" name="name" placeholder="Steve Jobs" required>
+                    <small>Type your Good Name</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" style="position: relative; left: 185px;">Email <span> * <style {color:red}>
+                            </style></label>
+                    <input type="email" id="email" name="email" placeholder="steve@apple.com" required>
+                    <div class="tooltip">Your Email Please where you need the proposal</div>
+                    <small>Type your Valid Email</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact" style="position: relative; left: 185px;">Contact Number <span> * <style
+                                {color:red}> </style></span></label>
+                    <input type="text" id="contact" name="contact" placeholder="9876543210" required> <br>
+                    <small>Insert No without 0 or +91. Ex - 9876543210</small>
+                </div>
+
+                <div class="form-group">
+                    <label style="position: relative; left: 185px;">Are you on WhatsApp? <span> * <style {color:red}>
+                            </style></label>
+                    <div class="radio-group">
+                        <input type="radio" id="yes" name="whatsapp" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="whatsapp" value="no">
+                        <label for="no">No</label>
+
+                        <div class="form-group">
+                            <label for="requirements"
+                                style="position: relative; right: 635px; bottom: 100px; font-size: 16px;">Requirements
+                                <span> * <style {color:red}></style></label>
+                            <textarea id="requirements"
+                                placeholder="Let us know Your Requirements or Message if have any"></textarea>
+
+
+
+
+                        </div>
+
+
+                        <button type="submit">Submit</button>
+            </form>
+
+
+
+        </div>
+    </div>
+
+    </div>
+
+    <div class="GST-Reg">
+        <h1>What is GST Registration ?</h1>
+        <p>GST Registration introduced in India from July 2017. As per the act its a mixture of indirect tax like VAT &
+            Service tax for the same. It is required when your turnover or sales cross more than 40 lakh rupees in a
+            year ( 10 lakh for NE * Hill States) as per the latest amendment from 1st April 2019.</p>
+
+        <p>For some specific business, it is mandatory registration without crossing the turnover limit. For ex, if you
+            are running an e-commerce business then you have to require the GST Registration from the starting of
+            business. We at MyOnlineCA helps you on GST Registration Online which takes only 2-3 working days and got
+            the verified GST Certification with login details in your Email Inbox.</p>
+
+
+        <h1>Who is required New GST Registration</h1>
+        <strong style="line-height: 2;">#1 Previous Law Converted Taxpayer –</strong>if any individual or companies are
+        registered under the
+        previous tax law like service tax or VAT or cst etc then they have required the New GST Registration.<br>
+        <strong style="line-height: 2;">#2 Turnover basis –</strong>if your business sales or turnover cross more than
+        40 lakh rupees in a year
+        then its required the GST Registration. For some state like North-Eastern States, J&K, Himachal Pradesh, and
+        Uttarakhand the limit is only 10 lakh rupees in a year.<br>
+        <strong style="line-height: 2;">#3 Event or Exhibition – </strong> In the GST Act its called the casual
+        taxpayer. If they don’t have any
+        permanent place of business then they can apply for the casual taxpayer under the GST Registration. It’s valid
+        for a maximum of 90 days (3 months).<br>
+        <strong style="line-height: 2;">#4 Non-Resident Indian (NRI) – </strong> if you are a non-resident person of
+        India or handling the
+        business of NRI in India then it’s required to apply for the GST Registration Online.<br>
+        <strong style="line-height: 2;">#5 The agent of Suppliers or Input tax Distributor – </strong>if you are an
+        input tax service
+        distributor then it’s required to apply for the GST Registration to carry forward the benefit of an input tax
+        credit under GST Law.<br>
+        <strong style="line-height: 2;">#6 Reverse Charge Mechanism – </strong> Under GST Law there is term reverse
+        charge mechanism so if you
+        fall under that category then its required the GST registration.<br>
+        <strong style="line-height: 2;">#7 E-commerce Sellers – </strong> if you are an E-commerce Sellers of the
+        leading aggregator portal like
+        Flipkart or Amazon then yes you need the GST Registration.<br>
+        <strong style="line-height: 2;">#8 E-Commerce Aggregator Portal – </strong>– if you are thinking to start your
+        own E-commerce business
+        then for ECommerce Business Registration you need GST Registration for the same.<br>
+        <strong style="line-height: 2;">#9 Outside India Online Portal –</strong> if you are software as a service
+        company and providing
+        information & database access from outside India to Indian visitors then it’s required to register under the
+        GST.
+
+
+        <h1>How GST Registration Online can be done</h1>
+        <p>1) First of all, just log in on GST official Portal.</p>
+        <p>2) Fill up the Part A of GST Registration Form-1 by the Professional.</p>
+        <p>3) You will get received the reference number via email and mobile number.</p>
+        <p>4) Fill Up the second part of the registration form and upload the below documents as per the business
+            entity.</p>
+        <p>5) Finally, a Certificate of Registration has been issued by the Government of India once your application is
+            approved.</p>
+
+        <p>But Remember you always need a Professional like CA/GST Consultant to Choose the Right AO Code & Proper HSC
+            Code for your registration with Proper Documents. so Always take services from Certified GST Consultant like
+            myonlineca which helps you to get done GST Registration Online</p>
+
+
+    </div>
+
+
+
+    <div class="Filing-fee">
+        <div class="return">
+            GST Registration Package @ 999/- INR
+
+        </div>
+        <ul class="list-container">
+            <li>GST Registration Application Filing by Legal Expert.</li>
+            <li>GST ARN Number Delivery in 1 Day.</li>
+            <li>GST Registration Final Certificate Delivery in 4-5 Days.</li>
+            <li>10+ Premium Legal Agreements for your Business</li>
+            <li>Premium Invoice Templates</li>
+        </ul>
+
+
+
+
+
+        <div class="book-btn" onclick="scrollToSection()">
+            BOOK NOW
+        </div>
+
+
+        <br>
+        <script>document.body.style.overflowX = 'hidden';</script>
+
+        <div class="GST-Fea">
+            <h1>Features of the GST Registration in Short?</h1>
+            <p>
+                #1 The concept of New GST Registration – Simply its a mixture of the all other taxes like VAT/CST or
+                Service tax or Excise duty or Entertainment tax, etc. and introduced in India from July 2017.<br></p>
+            <p> #2 GST Registration Limit – if your business turnover or sales cross more than 40 lakh rupees in a year
+                except in some certain business it’s required from starting.<br></p>
+            <p> #3 GST Registration Tax Rates – GST Tax rates are very product or services. It’s starting from 0% to 28%
+                for the same.<br>
+            <p> #4 GST Input Tax Credit Scheme – Only GSTIN Holder’s which are registered under the GST can avail the
+                input tax credit scheme where they can claim the tax which is already paid during the purchase of
+                products or services.<br></p>
+            <p> #5 GST Return Filing Concept – All the GSTIN Holder’s have to file the 3 GST Return monthly or quarterly
+                basis but have to pay the taxes every month.<br></p>
+            <p> #6 GST Registration under Composition Scheme – GST Registration has an option for the composition scheme
+                when you have less than 1 cr. turnover and want to pay taxes per month from 1% to 5% without a claim the
+                input tax credit.<br></p>
+            <br>
+
+            <h1>What are the benefits of the GST Registration </h1>
+            <p>There are a lot of the benefits under GST Registration which are following :-</p>
+            <strong>#1 More Strong as compare to Competitor – </strong> GST Registration gives you a valid legal entity
+            registration so you can easily show your valid proof to any other firm or person.<br>
+            <strong>#2 Take Input tax credit – </strong> GST Registration holders can avail the input tax credit during
+            the purchase of any goods or services. So if you are B2B Business then its required GST registration from
+            starting.<br>
+            <strong>#3 Sell in India anywhere –</strong> GST Registration holders can sell their products or services
+            anywhere across India. So there is no boundation like VAT/CST. You can easily supply the products
+            interstate.<br>
+
+            <strong>#4 Open a current business bank account – </strong> GSTIN Holder’s can open easily a current bank
+            account on the basis of GST Registration Certificate.<br>
+            <strong>#5 Sell Online –</strong>if you thinking about the e-commerce then on the basis of GSTIN
+            Registration Number you can easily sell with e-commerce portals like Amazon or Flipkart etc<br>
+            <strong>#6 Bid for the Govt Projects –</strong> if you are contractor & want to apply for any type of the
+            govt tender then all the Govt Projects required only valid firms with the GST Number.<br>
+            <strong>#7 Accept big projects from MNC –</strong>Until if you not a valid business with the valid legal
+            entity proof, MNC are not dealing with the same.<br>
+
+            <strong>#8 Increase Trust between your customer’s </strong>if you issue a Valid GSTIN Tax invoice then it
+            increases the trust between your customer’s & increases your brand value.<br>
+
+
+            <h1>What is GST Registration Number ?</h1>
+            <p>GST Registration number is an identification number which is assign to each Firm or Company or
+                Individual.Its a like a PAN Number for the same. Its a 15 digit unique tax identification number. The
+                first two digit show the state code & another next 10 digit show the pan number of the entity or person.
+                Apart from this next 1 number show the state Code & another 2 number are random. For Ex –
+                08AAKCM0506E1ZT</p>
+
+            <p>GST Registration Number is 15 Digit identification number which is allotted to each applicant. it’s
+                completely based on the Pan Number and State code. First two digit represent the state code and another
+                10 digits represent the Pan number of the client , one digit represents the entity code( Like
+                proprietorship firm or partnership, etc), one digit is blank and the last one represents check digit.
+            </p>
+
+
+            <h1>What are the Documents Required for the GST Registration ?
+            </h1>
+
+            <p>You have to required to prepare some of the documents as per the legal entity :-</p>
+
+            <p style="margin-top: 50px;">a) In the case of Sole Proprietorship Firm –<br>
+                – Pan Card and Address Proof of the proprietor.<br>
+                – any other firm registration certificate like MSME Registration etc.</p>
+
+            <p>b) In case of Partnership Firm –<br>
+                – Pan card of the Partnership Firm with the deed.<br>
+                – Partnership registration certificate & partners id & address proof.<br>
+            </p>
+
+            <p> c) In the case of Private Limited Company or One Person Company –<br>
+                – Pan Card of the Company , COI , MOA & AOA of Company.<br>
+                – Board Resolution with Directors Id & Address Proof.</p>
+
+            <p>d) In the case of LLP (Limited Liability Partnership) –<br>
+                – COI & Pan Card of Company.<br>
+                – Deed + Partners Id & Address Proof</p>
+
+
+
+            <h1>What is GST Registration Online Process ? </h1>
+            <p style="line-height: 1.5;">We simplified GST Registration Process in just 3 Steps –<br>
+                1) Place a Request in the above form with your basic details.<br>
+                2) Make the online payment professional fee via cards/net banking/upi<br>
+                3) Get Connected with a Dedicated CA which helps you on entire GST Registration.<br>
+                4) You will get ARN Number so you can check your GST Registration Status<br></p>
+
+            <h1>What is the Penalty for GST Registration ?</h1>
+            <p>Under the GST Act law if you are liable to register under the GST but still you ignore the same or not
+                paying
+                or making short payment of the GST Tax Payment then there is penalty respective the 10% of the total tax
+                amount subject to a minimum of 10000/- INR.</p>
+            <p style="margin-top: 30px;">The penalty can be 100% of the tax amount when the offence is subject to
+                deliberately evaded paying taxes.
+            </p>
+
+
+            <h1>What is the Compliance after the GST Registration ?</h1>
+            <p>After the GST Registration, each assessee has to file the GST Returns as per the compliance. if you are
+                registered under the regular scheme of the GST then you have to file the monthly basis returns for the
+                same. Composition dealers have to file the quarterly basis with some conditions. you can check out here
+                all about GST Return Filing.</p>
+
+        </div>
+
+
+</body>
+
+<script>
+      function scrollToSection() {
+            const section = document.getElementById('book1');
+            section.scrollIntoView({ behavior: 'smooth' });}
+</script>
+
+</html>

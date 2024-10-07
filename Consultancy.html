@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+           * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+
+        .main-center {
+            height: 550px;
+            width: 100%;
+            background: #e7717d;
+
+        }
+
+        .ICT {
+            
+    background: #e7717d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+
+        .ICT p {
+            
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 200px;
+
+
+        }
+
+        .ICT .p2 {
+            font-size: 20px;
+            position: relative;
+            margin-top: 25px;
+        }
+
+        .ICT-btn {
+            position: relative;
+            margin-top: 45px;
+            margin-left: 550px;
+            width: 234px;
+            height: 55px;
+            font-size: 22px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-weight: 700;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+
+        }
+
+        .ICT-btn:hover {
+            background-color: #6747c7;
+        }
+        .form-main {
+            font-size: 35px;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+        }
+        .form-box {
+            height: 1250px;
+            width: 90%;
+            background-color: #f0f4ff;
+            margin: 20px 5% 0px 5%;
+        }
+
+        .form-ITF {
+            width: 700px;
+            height: 950px;
+            background-color: white;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            margin-left: 260px;
+            top: 70px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-header {
+            height: 140px;
+            width: 700px;
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid black;
+            left: 192px;
+        }
+
+        .form-header h2 {
+
+            font-size: 32px;
+            width: 662px;
+            height: 47px;
+            position: relative;
+            left: 300px;
+            white-space: nowrap;
+        }
+
+        .form-header p {
+            font-size: 16px;
+            width: 662px;
+            height: 26px;
+            color: #57647E;
+            margin-top: 50px;
+            white-space: nowrap;
+            position: relative;
+            left: -200px;
+            margin-top: 80px;
+
+        }
+
+        .form-details {
+            width: 662px;
+            height: 300px;
+            position: relative;
+            top: 200px;
+            right: 450px;
+            white-space: nowrap;
+            font-size: 15px;
+            margin-top: 15px;
+            line-height: 30px;
+
+        }
+
+        form {
+            position: absolute;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            position: relative;
+            top: 370px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+            margin-bottom: 50px;
+            margin-left: 100px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 33%;
+            box-sizing: border-box;
+            position: relative;
+            right: 200px;
+            margin-top: 30px;
+        }
+
+        .tooltip {
+            position: absolute;
+            top: -35px;
+            left: 5px;
+            background-color: #2c3e50;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+            display: none;
+        }
+
+        .form-group:hover .tooltip {
+            display: block;
+        }
+
+        small {
+            display: block;
+            margin-top: 39px;
+            color: #777;
+
+            position: relative;
+            right: 139px;
+        }
+        
+
+        .radio-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .radio-group label {
+            margin-right: 10px;
+            margin-left: 5px;
+        }
+
+        button {
+            position: relative;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100px;
+            top: 100px;
+            right: 409px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+
+
+    </style>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">
+                <div class="logo">MY Wealth</div> 
+               </a>
+            <ul class="nav-links">
+                <li><a href="ITF.html">Income Tax Filling</a></li>
+                <li><a href="Consultancy.html">Book Consultancy</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Popular Services &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="ITF.html">ITR Filing Services</a>
+                        <a href="ISO.html">ISO Certification</a>
+                        <a href="GSTReg.html">GST Registration</a>
+                        <a href="GSTFilling.html">GST Return Filing</a>
+                        <a href="MSME.html">MSME Registration</a>
+                        <a href="companyreg.html">Company Registration</a>
+                        <a href="firm.html">Firm Registration</a>
+                        <a href="fssai.html">FSSAI License</a>
+                        <a href="trademark.html">Trademark Registration</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Bussiness Registration &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="companyreg.html">Company Registration</a>
+                        <a href="firm.html">Firm Registration</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">GST Services &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="GSTReg.html">GST Registration</a>
+                        <a href="GSTFilling.html">GST Return Filing</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Support &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="#">Contact Us</a>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+    </header>
+
+    <div class="main-center">
+        <div class="ICT">
+            <p>Now Book Consultancy at Lowest Cost with MyWealth</p>
+            <p class="p2">Simply Fill-Up Below Details Related to your Query/Questions <br> in Category
+                and Get Connect with Our Expert</p>
+            
+            <div class="ICT-btn" onclick="scrollToSection()">
+                GET PROPOSAL &#9654
+            </div>
+
+        </div>
+    </div>
+
+    <div id="book1" class="form-main">
+        📅 Book Your Consultation Right Now
+    </div>
+
+    <div class="form-box">
+        <div class="form-ITF">
+            <div class="form-header">
+                <h2>MyWealth Consultancy</h2>
+                <p>Now Book MyOnlineCA Consultancy at Affordable Price and Get Connected One to
+                    <br> One Senior Expert for your Queries and Problem.</p>
+            </div>
+            <div class="form-details">
+                How its Works ?<br>
+                a) Fill-Up Below Details with your Queries<br>
+                b) Choose your Consultancy Plan [Starting from 500/-INR]<br>
+                c) Get Connected with Expert on WhatsApp or Call<br>
+              
+
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label for="name">Name <span> * <style {color:red}></style></label> <br>
+                    <input type="text" id="name" name="name" placeholder="Steve Jobs" required>
+                    <small>Type your Good Name</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email <span> * <style {color:red}></style></label>
+                    <input type="email" id="email" name="email" placeholder="steve@apple.com" required>
+                    <div class="tooltip">Your Email Please where you need the proposal</div>
+                    <small>Type your Valid Email</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">Contact Number <span> * <style {color:red}> </style></span></label>
+                    <input type="text" id="contact" name="contact" placeholder="9876543210" required> <br>
+                    <small>Insert No without 0 or +91. Ex - 9876543210</small>
+                </div>
+
+                <div class="form-group">
+                    <label>Are you on WhatsApp? <span> * <style {color:red}></style></label>
+                    <div class="radio-group">
+                        <input type="radio" id="yes" name="whatsapp" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="whatsapp" value="no">
+                        <label for="no">No</label>
+
+                        
+
+                        
+                    </div>
+         
+
+                <button type="submit">Submit</button>
+            </form>
+
+
+
+        </div>
+    </div>
+
+    </div>
+
+    
+</body>
+<script> function scrollToSection() {
+    const section = document.getElementById('book1');
+    section.scrollIntoView({ behavior: 'smooth' });}
+
+
+    function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+}
+
+document.querySelector('.submit-btn h3').addEventListener('click', function () {
+    const category = document.querySelector('input[name="category"]:checked').value;
+    const subCategory = document.querySelector('input[name="sub-category"]:checked')
+        ? document.querySelector('input[name="sub-category"]:checked').value
+        : document.querySelector('input[name="gst-sub-category"]:checked')
+            ? document.querySelector('input[name="gst-sub-category"]:checked').value
+            : '';
+    const query = document.getElementById('query').value;
+
+    const formData = new FormData();
+    formData.append('category', category);
+    formData.append('sub-category', subCategory);
+    formData.append('query', query);
+
+    fetch('YOUR_GOOGLE_SCRIPT_URL', {
+        method: 'POST',
+        body: formData,
+    })
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === 'success') {
+                alert('Form submitted successfully!');
+            } else {
+                alert('There was a problem submitting the form.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+});
+
+
+function toggleSubOptions(selectedCategory) {
+    var companyOptions = document.getElementById('sub-options');
+    var gstOptions = document.getElementById('gst-sub-options');
+
+    if (selectedCategory === 'Company Registration') {
+        companyOptions.style.display = 'block';
+        gstOptions.style.display = 'none';
+    } else if (selectedCategory === 'GST Related') {
+        gstOptions.style.display = 'block';
+        companyOptions.style.display = 'none';
+    } else {
+        // Hide both if other categories are selected
+        companyOptions.style.display = 'none';
+        gstOptions.style.display = 'none';
+    }
+}
+
+
+
+
+function scrollToSection() {
+    const section = document.getElementById('container1');
+    section.scrollIntoView({ behavior: 'smooth' });
+}
+    </script>
+</html>

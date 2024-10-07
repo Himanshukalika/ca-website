@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"> <!-- Linking external CSS -->
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+           <a href="index.html">
+             <div class="logo">MY Wealth</div> 
+            </a>
+            <ul class="nav-links">
+                <li><a href="ITF.html">Income Tax Filling</a></li>
+                <li><a href="Consultancy.html">Book Consultancy</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Popular Services &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="ITF.html">ITR Filing Services</a>
+                        <a href="ISO.html">ISO Certification</a>
+                        <a href="GSTReg.html">GST Registration</a>
+                        <a href="GSTFilling.html">GST Return Filing</a>
+                        <a href="MSME.html">MSME Registration</a>
+                        <a href="companyreg.html">Company Registration</a>
+                        <a href="firm.html">Firm Registration</a>
+                        <a href="fssai.html">FSSAI License</a>
+                        <a href="trademark.html">Trademark Registration</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Bussiness Registration &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="companyreg.html">Company Registration</a>
+                        <a href="firm.html">Firm Registration</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">GST Services &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="GSTReg.html">GST Registration</a>
+                        <a href="GSTFilling.html">GST Return Filing</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Support &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="#">Contact Us</a>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+    </header>
+    <div class="hero-section">
+       <div class="main-msg">
+        <h2>Reliable Accounting & Tax </h2>
+        <p>Consultant Company</p>
+       </div>
+        </div>
+        <div class="content">
+            <div class="start">
+                <p>100+ Startups Per Month Choose My Wealth</p>
+                <div class="start-second">
+                    <p> You Next Startup ?</p>
+                </div>
+            </div>
+            <div class="button-get"  onclick="scrollToSection()">
+                <a> Get Started </a>
+            </div>
+        </div>
+        <div class="services">
+            Services
+        </div>
+        <div class="shop-section">
+
+            <div class="box1 box">
+                <div class="box-content">
+
+                    <div class="box-img" style="background-image: url('ITR.jpg');"></div>
+                    <h2>Income Tax Filling</h2>
+                    <p>We assist you in making correct and timely tax payments of dues such has advance tax,self
+                        assessment tax,etc</p>
+                </div>
+                <a href="ITF.html"> <div class="enquire-btn">
+                    Enquire Now
+                </div>
+            </a>
+            </div>
+
+            <div class="box2 box">
+                <div class="box-content">
+
+                    <div class="box-img" style="background-image: url('Consultancy.jpg');"></div>
+                    <h2>Book Consultancy</h2>
+                    <p>We assist you in making correct and timely tax payments of dues such has advance tax,self
+                        assessment tax,etc /p>
+                </div>
+               <a href="Consultancy.html"> <div class="enquire-btn">
+                    Enquire Now
+                </div>
+            </a>
+            </div>
+
+            <div class="box3 box">
+                <div class="box-content">
+
+                    <div class="box-img" style="background-image: url('Bussinesss.jpg');"></div>
+                    <h2>Bussiness Registration</h2>
+                    <p>We assist you in making correct and timely tax payments of dues such has advance tax,self
+                        assessment tax,etc /p>
+                </div>
+                <a href="companyreg.html"> <div class="enquire-btn">
+                    Enquire Now
+                </div>
+            </a>
+            </div>
+
+            <div class="box4 box">
+                <div class="box-content">
+
+                    <div class="box-img" style="background-image: url('GST.jpg');"></div>
+                    <h2>GST Services</h2>
+                    <p>We assist you in making correct and timely tax payments of dues such has advance tax,self
+                        assessment tax,etc</p>
+                </div>
+                <a href="GSTReg.html"> <div class="enquire-btn">
+                    Enquire Now
+                </div>
+            </a>
+            </div>
+
+
+            <div id="container1" class="container">
+                <div class="header">
+                    <p>📅 Book Free Consultation Right Now</p>
+                </div>
+                <div class="form-container">
+                    <h2>MyWealth Smart Contact Form</h2>
+                    <p>Choose Right Category so Our System will assign to you right team member in myonlineca office</p>
+
+                    <div class="form-group">
+                        <label for="category">Support Team Category <span>*</span></label>
+                        <div class="input-wrapper">
+                            <div class="radio-group">
+                                <label>
+                                    <input type="radio" name="category" value="Company Registration"
+                                        onclick="toggleSubOptions('Company Registration')">
+                                    Company Registration
+                                </label><br>
+
+                                <label>
+                                    <input type="radio" name="category" value="GST Related"
+                                        onclick="toggleSubOptions('GST Related')">
+                                    GST Related
+                                </label><br>
+                                <label>
+                                    <input type="radio" name="category" value="Income Tax Return"
+                                        onclick="toggleSubOptions('Other')">
+                                    Income Tax Return
+                                </label><br>
+                                <label>
+                                    <input type="radio" name="category" value="MSME/Udyog Aadhar"
+                                        onclick="toggleSubOptions('Other')">
+                                    MSME/Udyog Aadhar
+                                </label><br>
+                                <label>
+                                    <input type="radio" name="category" value="Trademark Registration"
+                                        onclick="toggleSubOptions('Other')">
+                                    Trademark Registration
+                                </label><br>
+                                <label>
+                                    <input type="radio" name="category" value="Food License/FSSAI"
+                                        onclick="toggleSubOptions('Other')">
+                                    Food License/FSSAI
+                                </label><br>
+                                <label>
+                                    <input type="radio" name="category" value="Annual Filing Pvt Ltd/LLP"
+                                        onclick="toggleSubOptions('Other')">
+                                    Annual Filing Pvt Ltd/LLP
+                                </label><br>
+                                <label>
+                                    <input type="radio" name="category" value="Others"
+                                        onclick="toggleSubOptions('Other')">
+                                    Others
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Existing Company Sub-options -->
+                    <div id="sub-options" class="sub-options" style="display: none;">
+                        <label for="category" class="type-com">Types of Company <span style="color: red;">*
+                            </span></label>
+                        <div class="sub-option" style="
+                             width: 200px;
+                             font-size: 14px;
+                             font-weight: bold;
+                             margin-left: 230px;">
+                            <label>
+                                <input type="radio" name="sub-category" value="Proprietorship Firm">
+                                Proprietorship Firm
+                            </label><br>
+                            <label>
+                                <input type="radio" name="sub-category" value="Partnership Firm">
+                                Partnership Firm
+                            </label><br>
+                            <label>
+                                <input type="radio" name="sub-category" value="Pvt Ltd / LLP / OPC">
+                                Pvt Ltd / LLP / OPC
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- New GST Sub-options -->
+                    <div id="gst-sub-options" class="sub-options" style="display: none;">
+                        <label for="category" class="type-gst">GST Sub Category <span style="color: red;">*
+                            </span></label>
+                        <div class="sub-GST" style="
+                             width: 200px;
+                             font-size: 14px;
+                             font-weight: bold;
+                             margin-left: 195px;">
+                            <label style="display: flex;
+                                        margin-left: 35px;">
+                                <input type="radio" name="gst-sub-category" value="GST Registration"
+                                    style="margin-right: 10px;">
+                                GST Registration
+                            </label><br>
+                            <label>
+                                <input type="radio" name="gst-sub-category" value="GST Return Filing">
+                                GST Return Filing
+                            </label>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label for="query">Query <span>*</span></label>
+                        <div class="input-wrapper">
+                            <textarea id="query" name="query" rows="5"
+                                placeholder="Let us know your query in detail"></textarea>
+                            <small>Let us know your query in detail</small>
+                        </div>
+                    </div>
+
+
+                    <div class="submit-btn">
+                        <h3>Submit</h3>
+                    </div>
+                </div>
+
+
+                  <div class="govt">
+                    <h1>Govt Recognition</h1>
+                    <p>Startup India Recognition :​DIPP9122</p>
+                    <p>CIN : U74140RJ2015PTC048757</p>
+                    <p>GSTIN : ​08AAKCM0506E1ZT</p>
+                 </div>
+
+
+                 <footer>
+                    <div class="footer-container">
+                      <div class="footer-section">
+                        <h3>Business Registration</h3>
+                        <ul>
+                          <li><a href="#">Pvt Ltd Company Registration</a></li>
+                          <li><a href="#">OPC Registration</a></li>
+                          <li><a href="#">LLP Registration</a></li>
+                          <li><a href="#">Partnership Registration</a></li>
+                          <li><a href="#">Proprietorship Registration</a></li>
+                        </ul>
+                      </div>
+                  
+                      <div class="footer-section">
+                        <h3>GST Portal</h3>
+                        <ul>
+                          <li><a href="#">GST Registration</a></li>
+                          <li><a href="#">GST Return Filing</a></li>
+                        </ul>
+                      </div>
+                  
+                      <div class="footer-section">
+                        <h3>Other Legal Registration</h3>
+                        <ul>
+                          <li><a href="#">MSME Registration</a></li>
+                          <li><a href="#">IEC Code Registration</a></li>
+                          <li><a href="#">FSSAI Registration</a></li>
+                          <li><a href="#">Shop Registration</a></li>
+                          <li><a href="#">Gumasta License</a></li>
+                        </ul>
+                      </div>
+                  
+                      <div class="footer-section">
+                        <h3>Annual Service</h3>
+                        <ul>
+                          <li><a href="#">Company Annual Filing</a></li>
+                          <li><a href="#">LLP Annual Filing</a></li>
+                          <li><a href="#">Income Tax Return</a></li>
+                        </ul>
+                      </div>
+                  
+                      <div class="footer-section">
+                        <h3>IPR Services</h3>
+                        <ul>
+                          <li><a href="#">Trademark Registration</a></li>
+                          <li><a href="#">Patent Registration</a></li>
+                        </ul>
+                      </div>
+                  
+                      <div class="footer-section">
+                        <h3>Support</h3>
+                        <ul>
+                          <li><a href="#">Contact Us</a></li>
+                          <li><a href="#">Download the App</a></li>
+                          <li><a href="#">Payment Checkout</a></li>
+                          <li><a href="#">Blog Guide</a></li>
+                        </ul>
+                      </div>
+                  
+                      <div class="footer-section">
+                        <h3>Company</h3>
+                        <ul>
+                          <li><a href="#">About Us</a></li>
+                          <li><a href="#">Join Us - Hiring</a></li>
+                          <li><a href="#">Reviews</a></li>
+                          <li><a href="#">Affiliate Programme</a></li>
+                          <li><a href="#">Franchise Partner</a></li>
+                        </ul>
+                      </div>
+                  
+                      <div class="footer-section">
+                        <h3>Legal</h3>
+                        <ul>
+                          <li><a href="#">Terms of Use</a></li>
+                          <li><a href="#">Privacy Policy</a></li>
+                          <li><a href="#">Refund Policy</a></li>
+                        </ul>
+                      </div>
+                  
+                      <div class="footer-section">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                          <a href="#"><i class="fab fa-facebook-f"></i></a>
+                          <a href="#"><i class="fab fa-twitter"></i></a>
+                          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                          <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                      </div>
+                  
+                      <div class="footer-section">
+                        <h3>Payment</h3>
+                        <img src="path-to-payment-image.png" alt="Payment methods">
+                      </div>
+                  
+                      <div class="footer-section">
+                        <h3>About Us</h3>
+                        <p>MyOnlineCA is India’s fastest growing “Legal Service Provider Company”...</p>
+                      </div>
+                    </div>
+                  </footer>
+                  
+
+
+
+                    <script src="script.js"></script>
+</body>
+
+</html>

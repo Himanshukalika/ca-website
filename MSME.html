@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui;
+
+        }
+
+
+        .main-center {
+            height: 550px;
+            width: 100%;
+            background: #e7717d;
+
+        }
+
+        .ICT {
+
+            background: #e7717d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+
+        .ICT p {
+
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-top: 200px;
+
+
+        }
+
+        .ICT .p2 {
+            font-size: 20px;
+            position: relative;
+            margin-top: 25px;
+        }
+
+        .ICT-btn {
+            position: relative;
+            margin-top: 45px;
+            margin-left: 550px;
+            width: 234px;
+            height: 55px;
+            font-size: 22px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-weight: 700;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+
+        }
+
+        .ICT-btn:hover {
+            background-color: #6747c7;
+        }
+
+        .form-main {
+            font-size: 35px;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+        }
+
+        .form-box {
+            height: 2200px;
+            width: 90%;
+            background-color: #f0f4ff;
+            margin: 20px 5% 0px 5%;
+        }
+
+        .form-ITF {
+            width: 700px;
+            height: 2000px;
+            background-color: white;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            margin-left: 260px;
+            top: 70px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-header {
+            height: 140px;
+            width: 700px;
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid black;
+
+        }
+
+        .form-header h2 {
+
+            font-size: 32px;
+            width: 662px;
+            height: 47px;
+            position: relative;
+            left: 150px;
+            white-space: nowrap;
+        }
+
+        .form-header p {
+            font-size: 16px;
+            width: 662px;
+            height: 26px;
+            color: #57647E;
+            margin-top: 50px;
+            white-space: nowrap;
+            position: relative;
+            left: -250px;
+            margin-top: 80px;
+
+        }
+
+        .form-details {
+            width: 662px;
+            height: 300px;
+            position: relative;
+            top: 200px;
+            right: 450px;
+            white-space: nowrap;
+            font-size: 15px;
+            margin-top: 15px;
+            line-height: 30px;
+
+        }
+
+        form {
+            position: absolute;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            position: relative;
+            left: 120px;
+            top: 190px;
+            white-space: nowrap;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+            margin-bottom: 50px;
+            margin-left: 100px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 33%;
+            box-sizing: border-box;
+            position: relative;
+            margin-top: 30px;
+        }
+
+        .tooltip {
+            position: absolute;
+            top: -35px;
+            left: 5px;
+            background-color: #2c3e50;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+            display: none;
+        }
+
+        .form-group:hover .tooltip {
+            display: block;
+        }
+
+        small {
+            display: block;
+            margin-top: 39px;
+            color: #777;
+
+            position: relative;
+            right: 139px;
+        }
+
+
+        .radio-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .radio-group label {
+            margin-right: 10px;
+            margin-left: 5px;
+        }
+
+        button {
+            position: relative;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100px;
+            top: 260px;
+            right: 790px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 300px;
+            height: 100px;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: none;
+            position: relative;
+            right: 695px;
+            bottom: 100px;
+        }
+
+        .GST-Reg {
+            position: relative;
+            top: 210px;
+        }
+
+        .GST-Reg p {
+            margin-top: 20px;
+        }
+
+        .GST-Reg h1 {
+            margin-top: 20px;
+        }
+
+        .Filing-fee {
+            width: 1400px;
+            height: 500px;
+            background-color: #e7717d;
+            margin-top: 50px;
+            position: relative;
+            top: 200px;
+            right: 70px;
+            white-space: nowrap;
+        }
+
+        .list-container {
+            padding: 20px;
+            margin-left: 50px;
+            list-style-type: disc;
+            line-height: 2;
+            color: white;
+        }
+
+
+        .return {
+            font-size: 35px;
+            margin: 0px 0px 0px 30px;
+            padding: 50px 0px 20px;
+            color: white;
+            border-bottom: 2px solid white;
+            width: 550px;
+        }
+
+        .book-btn {
+            width: 150px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            margin: 20px 0px 0px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            cursor: pointer;
+
+        }
+
+        .GST-Fea {
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+
+        .GST-Fea p {
+            margin-right: 70px;
+            margin-top: 10px;
+            white-space: wrap;
+
+        }
+
+        .GST-Fea h1 {
+            margin-top: 20px;
+        }
+
+        strong {
+            white-space: wrap;
+            line-height: 2;
+            margin-top: 50px;
+        }
+    </style>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">
+                <div class="logo">MY Wealth</div> 
+               </a>
+            <ul class="nav-links">
+                <li><a href="ITF.html">Income Tax Filling</a></li>
+                <li><a href="Consultancy.html">Book Consultancy</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Popular Services &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="ITF.html">ITR Filing Services</a>
+                        <a href="ISO.html">ISO Certification</a>
+                        <a href="GSTReg.html">GST Registration</a>
+                        <a href="GSTFilling.html">GST Return Filing</a>
+                        <a href="MSME.html">MSME Registration</a>
+                        <a href="companyreg.html">Company Registration</a>
+                        <a href="firm.html">Firm Registration</a>
+                        <a href="fssai.html">FSSAI License</a>
+                        <a href="trademark.html">Trademark Registration</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Bussiness Registration &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="companyreg.html">Company Registration</a>
+                        <a href="firm.html">Firm Registration</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">GST Services &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="GSTReg.html">GST Registration</a>
+                        <a href="GSTFilling.html">GST Return Filing</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Support &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="#">Contact Us</a>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+    </header>
+
+    <div class="main-center">
+        <div class="ICT">
+            <p>MSME Registration Online </p>
+            <p class="p2">Now Apply for MSME Registration Online anywhere in India with MyWealth
+                Govt Recognized Portal. Issued 1 lakh+ certificate </p>
+
+            <div class="ICT-btn"  onclick="scrollToSection()">
+                GET PROPOSAL &#9654
+            </div>
+
+        </div>
+    </div>
+
+    <div id="book1" class="form-main">
+        📅 Book Your Consultation Right Now
+    </div>
+
+    <div class="form-box">
+        <div class="form-ITF">
+            <div class="form-header">
+                <h2>MSME Registration Application</h2>
+                <p>
+                    Just Fill-Up the Details and Get Started</p>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label for="name" style="position: relative; left: 185px;">Aadhar Card No<span> * <style
+                                {color:red}></style>
+                    </label> <br>
+                    <input type="text" id="name" name="name" placeholder="Valid Aadhar Card Number" required>
+                    <small></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" style="position: relative; left: 185px;">Aadhar Card Name<span> * <style
+                                {color:red}>
+                            </style></label>
+                    <input type="email" id="email" name="email" placeholder="Full Aadhar Card Name" required>
+                    <div class="tooltip">Your Email Please where you need the proposal</div>
+                    <small></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact" style="position: relative; left: 185px;">PAN Number<span> * <style {color:red}>
+                            </style></span></label>
+                    <input type="text" id="contact" name="contact" placeholder="PAN Number" required> <br>
+                    <small></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact" style="position: relative; left: 185px;">Email<span> * <style {color:red}>
+                            </style></span></label>
+                    <input type="text" id="contact" name="contact" placeholder="
+                    Valid Email id" required> <br>
+                    <small></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact" style="position: relative; left: 185px;">Mobile Number<span> * <style
+                                {color:red}> </style></span></label>
+                    <input type="text" id="contact" name="contact" placeholder="
+                    Enter your mobile number" required> <br>
+                    <small></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact" style="position: relative; left: 185px;">Firm/Shop Name<span> * <style
+                                {color:red}> </style></span></label>
+                    <input type="text" id="contact" name="contact" placeholder="
+                    Enter your Firm/Shop Name" required> <br>
+                    <small></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact" style="position: relative; left: 185px;">Business Address <span> * <style
+                                {color:red}> </style></span></label>
+                    <input type="text" id="contact" name="contact" placeholder="
+                    Enter your Bussiness Address" required> <br>
+                    <small></small>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="contact" style="position: relative; left: 185px;">Date of Starting Business<span> *
+                            <style {color:red}> </style>
+                        </span></label>
+                    <input type="text" id="contact" name="contact" placeholder="
+                    Type any date which you Remember" required><br>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="contact" style="position: relative; left: 185px;">Nature of Business<span> * <style
+                                {color:red}> </style></span></label>
+                    <input type="text" id="contact" name="contact" placeholder="Type of Business,Product or Services"
+                        required> <br>
+                    <small></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact" style="position: relative; left: 185px;">No of Employees<span> * <style
+                                {color:red}> </style></span></label>
+                    <input type="text" id="contact" name="contact" placeholder="
+                    Enter your the no of employees" required> <br>
+                    <small></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact" style="position: relative; left: 185px;">Investement in Business<span> * <style
+                                {color:red}> </style></span></label>
+                    <input type="text" id="contact" name="contact" placeholder="
+                    Enter the Investmen in Business" required> <br>
+                    <small></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact" style="position: relative; left: 185px;">Account No<span> * <style {color:red}>
+                            </style></span></label>
+                    <input type="text" id="contact" name="contact" placeholder="
+                    Entert the account number" required> <br>
+                    <small></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact" style="position: relative; left: 185px;">IFSC Code<span> * <style {color:red}>
+                            </style></span></label>
+                    <input type="text" id="contact" name="contact" placeholder="
+                    Enter your  Bank IFSC code" required> <br>
+                    <small></small>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label for="social-category" class="dropdown-label"
+                        style="position: relative; left: 185px; top: 10px;">Type of Entity<span
+                            class="required">*</span></label>
+                    <select id="social-category" name="social-category" class="dropdown"
+                        style="width: 300px; height: 40px; position: relative; left: 150px;">
+                        <option value="general">Proprietorship</option>
+                        <option value="general">Partnership</option>
+                        <option value="general">Private Limited Company</option>
+                        <option value="general">Others</option>
+                    </select>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="form-group">
+                    <label for="social-category" class="dropdown-label"
+                        style="position: relative; left: 185px; top: 10px;">Social Category <span
+                            class="required">*</span></label>
+                    <select id="social-category" name="social-category" class="dropdown"
+                        style="width: 300px; height: 40px; position: relative; left: 150px;">
+                        <option value="general">General</option>
+                        <option value="general">OBC</option>
+                        <option value="general">SC</option>
+                        <option value="general">ST</option>
+                    </select>
+                </div>
+
+
+                <label for="gender"
+                    style="font-weight: bold; font-size: 16px; position: relative; top: 200px; left: 325px;">Gender
+                    <span style="color: red;">*</span></label>
+                <div id="gender" style="margin-top: 5px; position: relative; top: 200px; left: 400px;">
+                    <label style="margin-right: 20px;">
+                        <input type="radio" name="gender" value="male" style="margin-right: 5px;"> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female" style="margin-right: 5px;"> Female
+                    </label>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label style="position: relative; left: 185px;">Are you on WhatsApp? <span> * <style {color:red}>
+                            </style></label>
+                    <div class="radio-group">
+                        <input type="radio" id="yes" name="whatsapp" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="whatsapp" value="no">
+                        <label for="no">No</label>
+
+
+
+
+
+
+                        <div class="form-group">
+                            <label for="requirements"
+                                style="position: relative; right: 635px; bottom: 100px; font-size: 16px;">Requirements
+                                <span> * <style {color:red}></style></label>
+                            <textarea id="requirements"
+                                placeholder="Let us know Your Requirements or Message if have any"></textarea>
+
+
+
+
+                        </div>
+
+
+                        <button type="submit">Submit</button>
+            </form>
+
+
+
+        </div>
+    </div>
+
+    </div>
+
+    <div class="GST-Reg">
+        <h1>What is MSME Registration ?
+        </h1>
+        <p>MSME Registration is playing very important role for the small and medium business across India.Numerous
+            surveys show that country’s true economic growth reckoned not just on its large-scale industries and foreign
+            investments but also on its small and medium level industries that also includes various cottage industries
+            operating in India. By looking towards the developing country like India whose economy is basically
+            dependent on agriculture and small-scale industries, applying for MSME registration or SSI Registration
+            could be considered as its backbone.</p>
+
+        <p>In India, every state has its own tradition and culture which they follow and become eminent in that kind of
+            industry. No doubt that India is a country with its huge stock of natural resources with intense climate
+            variations, so promoting and working in such type of industries on a very large scale is very common among
+            the traders.</p>
+        <p>So Ultimately MSME Registration are a certification which is issued by respective state government department
+            to avail to benefits under the MSME Act. Now from the 2015 government modified the MSME or SSI Registration
+            and its has been changed into the Udyog Aadhar Registration.
+
+        </p>
+
+
+        <h1>Why MSME Registration are Important for Small Business ?</h1>
+        <p>MSME registration is really important for developing the transparency and accountability of the
+            above-mentioned industries, Government of India has basically categorized these industries which is known as
+            MSME- Micro, Small and Medium Enterprises. MSME is actually an authorized body that helps in promoting these
+            industries throughout the country with the help of officially legalized Act. One of the unique advantage of
+            MSME registration is that it authorizes numerous incentives and incentives to industries included under
+            MSMED Act. In order to subscribe under MSME, a MSME registration procedure is mandatory. Apart from the
+            enterprises as mentioned above, some firms, or shop registration or public and private limited companies,
+            LLPs are also eligible to apply for registration under MSME to avail its benefits.
+
+        </p>
+
+
+
+
+
+
+        <div class="Filing-fee">
+            <div class="return">
+                Classification under MSME Registration
+
+
+            </div>
+            <p style="color: white; white-space: wrap; margin-left: 40px;margin-right: 100px;">An industry owner before
+                applying for the registration for MSME should know the requisites to classify
+                his company and must file his application in that category only in order to avoid any cumbersome
+                technicalities. As a result of this, Government of India has come up with a set of rules and regulations
+                for the industries in order to classify them. The classification is mentioned below:</p><br>
+
+            <p style="color: white; white-space: wrap; margin-left: 40px;margin-right: 100px;">Micro industries– In
+                applying for registration of these kinds of industries your investment shall not
+                exceed 25 lakhs for companies in the manufacturing sectors and 10 lakhs for the service sector.
+
+            </p>
+
+            <p style="color: white; white-space: wrap; margin-left: 40px;margin-right: 100px;">Small industries– In
+                small scale industries the investment shall not exceed 5 crores for companies in the
+                manufacturing sectors and 2 crores for the service sector.</p>
+
+
+            <p style="color: white; white-space: wrap; margin-left: 40px;margin-right: 100px;">Medium industries– when
+                applying for medium industries your investment shall not exceed 10 crores for
+                companies in the manufacturing sectors and 5 crores for the service sector.</p>
+
+
+            <div class="book-btn"  onclick="scrollToSection()">
+                BOOK NOW
+            </div>
+
+
+            <br>
+            <script>document.body.style.overflowX = 'hidden';</script>
+
+            <div class="GST-Fea">
+
+
+                <h1>MSME Registration Process :
+
+                </h1>
+                <p>MSME Registration process is completely online but you have to require the professional to fill-up
+                    your application and getting approval from the department. MSMED Act is not compulsory for the
+                    companies but it is always suggested for them in order to have Government backing up their company.
+                    As a result, numerous medium and small-scale industries are stepping forward to register their
+                    company. The whole process of registration is given below:
+                </p><br>
+                <p>The registration process simply requires you an application for the MSME registration that has to be
+                    prepared and submitted to the respective government office according to the latest rules and
+                    regulations.
+                </p><br>
+                <p>In addition to it, one has to file its personal details of the kind of the industry they want to run
+                    and some of the respective documents as mentioned below:
+
+                </p><br>
+
+
+                <h4 style="line-height: 1.5; font-weight: normal;">#1 Your Aadhaar Number. <br>
+                    #2 Name of Applicant. <br>
+                    #3 Social Category. <br>
+                    #4 Gender <br>
+                    #5 Name of Enterprise / Business. <br>
+                    #6 Type of Organization you are opting for. <br>
+                    #7 Your PAN number. <br>
+                    #8 Location of Plant you are setting up in a place. <br>
+                    #9 Your current office Address. <br>
+                    #10 Mobile Number. <br>
+                    #11 Your E- Mail ID.
+                    #12 Date of Commencement of Business. <br>
+                    #13 Your Bank Account Number. <br>
+                    #14 Bank IFS Code. <br>
+                    #15 Main Business Activity of Enterprise <br>
+                    #16 NIC 2 Digit Code. <br>
+                    #17 Additional details about Business.
+                    #18 Number of employees <br>
+                    #19 Investment in Plant & Machinery / Equipment <br>
+                    #20 Attachment of your scan copy of Aadhaar card <br>
+                    #21 The usual time is between 2-3 days to complete all the documentation of the registration. <br>
+                </h4>
+
+                <p>In spite of the fact that registration process is really hassle free, some industry owners still
+                    feels necessary to complete all the formalities in order to avoid any type of difficulties
+                    thereafter.
+
+                </p>
+
+
+
+
+                <h1>Benefits under MSME Registration Online:
+                </h1>
+
+                <p>MSME Registration provides to you right to get avail benefits under the MSME Scheme of the
+                    government’s. ​One of the outstanding advantage of registration is that the Government will include
+                    your company or business in the the Central and State Government schemes so one must get the
+                    complete advantage of the schemes. It will lead into superior awareness about the much-arrived
+                    schemes and complete transparency of the government working process. Numerous benchmark benefits
+                    include simple ingress to various government subsidies and bank loans. Ability to apply for
+                    different Government’s beneficial schemes and clarity in various laws such as exercise, banking
+                    direct taxes and much more. Below are the some important MSME Scheme Benefits under the Registration
+                    :-
+
+                </p>
+                <strong>Easy Bank Loans –</strong> All the business which are registered under the MSME can avail the
+                benefits regarding the bank loans. Banks are provide the collateral free loans where your <br> property
+                is
+                not pledge with the Banks. Govt and SIDBI both create a separate legal entity which work to implement
+                this scheme on the all small and medium business enterprises.<br>
+
+
+                <strong>Reservation Benefits– </strong> Government also amend the industrial act where every small
+                business which are registered under the MSME can avail the this scheme where you can <br> increase your
+                production of the goods and employment opportunities in the country.<br>
+
+
+
+                <strong>Easy to open business bank account or any other license registration–</strong> MSME Registration
+                Certificate treat as legal entity proof
+                of the business so you can easily open a <br> current bank account or mentioned your registration while
+                making another license like GST Registration etc.<br>
+
+                <strong>Participate in the International Trade Fairs – </strong>All the small business have to expand
+                their business across the India or on international level which is required to exposure and <br> support
+                from
+                the government. Govts provide benefits to participate and special consideration in the international and
+                national trade fairs which is organised by the MSME <br> Department.<br>
+
+
+
+
+
+                <strong>Octroi Benefits under MSME –</strong>Small enterprise have to pay the octroi on the goods and
+                services which is delivered by them so its increase the unnecessary cost sometime. In <br> this scheme
+                govt
+                provides the refund of the octroi which is imposed on the goods and services.<br>
+
+
+                <strong>Stamp Duty and Registration Charges Waived off –</strong>Previously all the enterprise which are
+                expand their business in the IT Park or SEZ they avail the benefits under the Stamp <br> Act but now all
+                the
+                small enterprise also can avail these benefits<br>
+
+
+                <strong>Exemption under the Income Tax as Direct tax –</strong>All the small business which are doing
+                some really innovative or towards the society improvement then they can take the <br> benefits of the
+                income
+                tax in the initial years. even under the startup india scheme same benefits are introduce by the
+                government.<br>
+
+                <strong>Get Reimbursement under the Bar Code Registration –</strong> Small Enterprise have required lot
+                of the mandatory register to run their product based business so all the <br> manufacturing units
+                required
+                the barcode registration. Under this scheme you are eligible for the subsidy under the bar code
+                registration. <br>
+
+                <strong>Various Subsidy on the NSIC Performance and Credit Rating - </strong>Under this scheme all the
+                small enterprise can avail the benefits of the subsidy on various expenses through <br> NSIC
+                Performance. <br>
+
+                <strong>Industrial Promotion Subsidy – </strong> Under this scheme govt wants to promote the small
+                enterprise so they provide benefits regarding industrial promotion in terms of subsidy. <br>
+
+
+
+
+
+
+
+
+
+                <strong>Protection in the Delay- Payments from Buyers</strong> This is most common problem for the small
+                business. Buyers are always dealy in the payments to the small business but <br> under this scheme all
+                the enterprise are protected and can file case against the buyer & settlement of the dispute in the
+                minimum time.
+                <br>
+
+                <strong>Reduction in rate of the Interest by the major banks </strong> Under this scheme all the major
+                banks have some policy regarding the banks loan for the MSME which are following –
+
+                <p>#1 40% of the total advances must go to micro and small enterprises involved which are in
+                    manufacturing having investment in plant and machinery up to Rs.10 lakh and for service enterprises
+                    having investment in equipment up to Rs.4 lakh.
+
+                </p>
+                <p>#2 20% of the total advance to micro and small enterprises should go to manufacturing enterprises
+                    that have above Rs.10 lakh till Rs.25 lakh investment in the plant and machinery and for service
+                    enterprises that have investments in equipment above Rs.4
+
+                </p>
+
+                <p>#3 To simplify, 60% of the advances must go to micro enterprises.
+
+                </p>
+
+                <strong>Get Capital Subsidy – </strong> Under this scheme all the enterprise got the 15% capital subsidy
+                so they can purchase the plan and machinery for the same. <br>
+
+                <strong>Security Deposit Waived off - </strong> Small Enterprise have very small amount of the working
+                capital to run their business but in the some registration they have to deposit the security <br> money
+                so
+                under this scheme its has been waived off for the msme registration enterprises. <br>
+
+                <strong>Concession in the Electricity Bills –</strong> All the small enterprise which have MSME Udyog
+                aadhar Certificate can avail the concession in the electricity bills in the particular areas. <br>
+
+                <strong>Got the benefits in ISO Certificate –</strong>Small enterprise while apply for the big projects,
+                they have to show their credibility which requried the ISO Certification. In this scheme you <br> got
+                the
+                subsidy for the ISO Certification. <br>
+
+                <strong>Preference in the Government Tenders –</strong> MSME certified enterprise are prefered in the
+                government tenders during the bid. so this is one of the most important advantage to <br> win the big
+                tenders. <br>
+
+                <strong>Got the Subsidy on the Patent Registration –</strong> There are lot of the innovative small
+                firms which are doing some innovative things & required a patent registration which is really <br>
+                expensive.
+                Under this scheme you got the 50% waived off in the patent government registration fee.
+
+
+
+
+
+
+
+                <h1> Documents Required for the MSME Registration
+                </h1>
+                <strong>a) Aadhar Card Copy –</strong>Aadhar is the mandatory now for the MSME Registration Online.
+                without aadhar card you can’t register for the MSME Registration. In the case of <br> the private
+                limited
+                company registration or partnership etc Partners aadhar card is worked because there is no aadhar card
+                on company name. <br> <br>
+
+                <strong>b) Mobile Number linking with the aadhar card – </strong> MSME Registration is online so you
+                have to required to link your mobile number with the aadhar card. If number is not linked <br> with the
+                aadhar card then you have to required the alternative documents like pan card copy etc.
+              
+                </body>
+
+                <script>
+                      function scrollToSection() {
+            const section = document.getElementById('book1');
+            section.scrollIntoView({ behavior: 'smooth' });}
+                </script>
+                </html>

@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui;
+
+        }
+
+
+        .main-center {
+            height: 550px;
+            width: 100%;
+            background: #e7717d;
+
+        }
+
+        .ICT {
+
+            background: #e7717d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+
+        .ICT p {
+
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-top: 200px;
+
+
+        }
+
+        .ICT .p2 {
+            font-size: 20px;
+            position: relative;
+            margin-top: 25px;
+        }
+
+        .ICT-btn {
+            position: relative;
+            margin-top: 45px;
+            margin-left: 550px;
+            width: 234px;
+            height: 55px;
+            font-size: 22px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-weight: 700;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+
+        }
+
+        .ICT-btn:hover {
+            background-color: #6747c7;
+        }
+
+        .form-main {
+            font-size: 35px;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+        }
+
+        .form-box {
+            height: 1200px;
+            width: 90%;
+            background-color: #f0f4ff;
+            margin: 20px 5% 0px 5%;
+        }
+
+        .form-ITF {
+            width: 700px;
+            height: 1000px;
+            background-color: white;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            margin-left: 260px;
+            top: 70px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-header {
+            height: 140px;
+            width: 700px;
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid black;
+
+        }
+
+        .form-header h2 {
+
+            font-size: 32px;
+            width: 662px;
+            height: 47px;
+            position: relative;
+            left: 150px;
+            white-space: nowrap;
+        }
+
+        .form-header p {
+            font-size: 16px;
+            width: 662px;
+            height: 26px;
+            color: #57647E;
+            margin-top: 50px;
+            white-space: nowrap;
+            position: relative;
+            left: -250px;
+            margin-top: 80px;
+
+        }
+
+        .form-details {
+            width: 662px;
+            height: 300px;
+            position: relative;
+            top: 200px;
+            right: 450px;
+            white-space: nowrap;
+            font-size: 15px;
+            margin-top: 15px;
+            line-height: 30px;
+
+        }
+
+        form {
+            position: absolute;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            position: relative;
+            left: 120px;
+            top: 190px;
+            white-space: nowrap;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+            margin-bottom: 50px;
+            margin-left: 100px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 33%;
+            box-sizing: border-box;
+            position: relative;
+            margin-top: 30px;
+        }
+
+        .tooltip {
+            position: absolute;
+            top: -35px;
+            left: 5px;
+            background-color: #2c3e50;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+            display: none;
+        }
+
+        .form-group:hover .tooltip {
+            display: block;
+        }
+
+        small {
+            display: block;
+            margin-top: 39px;
+            color: #777;
+
+            position: relative;
+            right: 139px;
+        }
+
+
+        .radio-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .radio-group label {
+            margin-right: 10px;
+            margin-left: 5px;
+        }
+
+        button {
+            position: relative;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100px;
+            top: 260px;
+            right: 790px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 300px;
+            height: 100px;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: none;
+            position: relative;
+            right: 695px;
+            bottom: 100px;
+        }
+
+        .GST-Reg {
+            position: relative;
+            top: 210px;
+        }
+
+        .GST-Reg p {
+            margin-top: 20px;
+        }
+
+        .GST-Reg h1 {
+            margin-top: 20px;
+        }
+
+        .Filing-fee {
+            width: 1400px;
+            height: 500px;
+            background-color: #e7717d;
+            margin-top: 50px;
+            position: relative;
+            top: 50px;
+
+            white-space: nowrap;
+        }
+
+        .list-container {
+            padding: 20px;
+            margin-left: 50px;
+            list-style-type: disc;
+            line-height: 2;
+            color: white;
+        }
+
+
+        .return {
+            font-size: 35px;
+            margin: 0px 0px 0px 30px;
+            padding: 50px 0px 20px;
+            color: white;
+            border-bottom: 2px solid white;
+            width: 550px;
+        }
+
+        .book-btn {
+            width: 150px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            margin: 20px 0px 0px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            cursor: pointer;
+
+        }
+
+        .GST-Fea {
+            margin-top: 50px;
+
+            position: relative;
+            top: 250px;
+        }
+
+        .GST-Fea p {
+            margin-right: 70px;
+            margin-top: 10px;
+            white-space: wrap;
+            line-height: 2;
+
+        }
+
+        .GST-Fea h1 {
+            margin-top: 20px;
+        }
+
+        strong {
+            white-space: wrap;
+            line-height: 2;
+            margin-top: 50px;
+        }
+    </style>
+    <header>
+        <nav class="navbar">
+            
+            <a href="index.html">
+                <div class="logo">MY Wealth</div> 
+               </a>
+            <ul class="nav-links">
+                <li><a href="ITF.html">Income Tax Filling</a></li>
+                <li><a href="Consultancy.html">Book Consultancy</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Popular Services &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="ITF.html">ITR Filing Services</a>
+                        <a href="ISO.html">ISO Certification</a>
+                        <a href="GSTReg.html">GST Registration</a>
+                        <a href="GSTFilling.html">GST Return Filing</a>
+                        <a href="MSME.html">MSME Registration</a>
+                        <a href="companyreg.html">Company Registration</a>
+                        <a href="firm.html">Firm Registration</a>
+                        <a href="fssai.html">FSSAI License</a>
+                        <a href="trademark.html">Trademark Registration</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Bussiness Registration &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="companyreg.html">Company Registration</a>
+                        <a href="firm.html">Firm Registration</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">GST Services &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="GSTReg.html">GST Registration</a>
+                        <a href="GSTFilling.html">GST Return Filing</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Support &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="#">Contact Us</a>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+    </header>
+
+    <div class="main-center">
+        <div class="ICT">
+            <p>Private Limited Company Registration in India : Start Pvt Ltd Company
+            </p>
+            <p class="p2">Private Limited Company Registration by 100% Govt Certified Portal
+                Just Fill-Up Below Details and Get Started Your Pvt Ltd Company Registration in Seconds with FREE
+                Consultancy !</p>
+
+            <div class="ICT-btn" onclick="scrollToSection()">
+                GET PROPOSAL &#9654
+            </div>
+
+        </div>
+    </div>
+
+
+    <h1 style="margin: 20px 0px 0px 30px;">What is Private Limited Company Registration ?
+
+    </h1>
+    <p style="margin-left: 30px; margin-right: 30px;">​Private Limited Company Registration is one of the most popular
+        legal entity in India. In simplified terms, its
+        a proper company registration in India with the ministry of corporate affairs and gives you rights doing
+        business anywhere in India or outside. MCA register your pvt ltd company registration and provide to you CIN
+        Number with Certificate of Incorporation. At the end of the process, you have to simply open a current bank
+        account on the Company Name on the basis of Certificate and Start your Company Operations.
+
+    </p>
+
+    <h1 style="margin: 20px 0px 0px 30px;">What is Pvt Ltd Company Registration Rules ?
+    </h1>
+    <p style="margin-left: 30px;">​#1 Require minimum 2 directors or partner in the Private Limited Company. <br>
+        #2 Authorised Share Capital: 1 Lakh Rupees ( It’s just a share proposed value, doe’st not mean you have to
+        invest 1 lakh rupees)</p>
+
+
+
+    <div class="Filing-fee">
+        <div class="return">
+            Pvt Ltd Company Registration Fees
+
+
+
+        </div>
+        <p style="color: white; white-space: wrap; margin-left: 40px;margin-right: 100px; margin-top: 20px;">We at
+            MyWealth offers
+            Cheapest Cost on Pvt Ltd Company Registration Fees</p><br>
+
+        <strong
+            style="color: white; white-space: wrap; margin-left: 40px;margin-right: 100px; margin-top: 20px;">Pricing :
+            10999/- INR ( All Inclusive)</strong>
+
+        <p style="color: white; white-space: wrap; margin-left: 40px;margin-right: 100px;">Include : <br>
+            #1 2 Directors DIN + DSC <br>
+            #2 Name Approval of Company + MOA & AOA Drafting & Printing <br>
+            #3 Certificate of Incorporation + PAN & TAN of the Company <br>
+
+        </p>
+
+        <p style="color: white; white-space: wrap; margin-left: 40px;margin-right: 100px; margin-top: 30px;"> Free with
+            above package : <br>
+            #1 MSME Registration Certificate to avail govt benefits <br>
+            #2 10+ Premium Legal Agreements Template</p>
+
+
+        <div  class="book-btn" onclick="scrollToSection()">
+            BOOK NOW
+        </div>
+
+
+
+        <div class="form-main">
+            📅 Book Now for Pvt Ltd Company Registration in India
+
+        </div>
+
+        <div id="book1" class="form-box">
+            <div class="form-ITF">
+                <div class="form-header">
+                    <h2>Company Registration in India</h2>
+                    <p>
+                        100% Govt Certified Platform with 1 lakh+companies</p>
+                </div>
+
+                <form>
+                    <div class="form-group">
+                        <label for="name" style="position: relative; left: 185px;">Name<span> * <style {color:red}>
+                                </style>
+                        </label> <br>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        <small></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" style="position: relative; left: 185px;">Email<span> * <style {color:red}>
+                                </style></label>
+                        <input type="email" id="email" name="email" placeholder="Enter valid email-ID" required>
+                        <div class="tooltip">Your Email Please where you need the proposal</div>
+                        <small></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact" style="position: relative; left: 185px;">Contact Number<span> * <style
+                                    {color:red}>
+                                </style></span></label>
+                        <input type="text" id="contact" name="contact" placeholder="Enter your MOB Number" required>
+                        <br>
+                        <small></small>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="form-group">
+                        <label for="social-category" class="dropdown-label"
+                            style="position: relative; left: 185px; top: 10px;">Select Category<span
+                                class="required">*</span></label>
+                        <select id="social-category" name="social-category" class="dropdown"
+                            style="width: 300px; height: 40px; position: relative; left: 150px;">
+                            <option value="general">Pvt Ltd Company (2 Person)</option>
+                            <option value="general"> LLP (2 Person)</option>
+                            <option value="general">OPC (1 Person)</option>
+                            <option value="general">Help Me to Choose
+                            </option>
+                        </select>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label style="position: relative; left: 185px;">Are you on WhatsApp? <span> * <style
+                                    {color:red}>
+                                </style></label>
+                        <div class="radio-group">
+                            <input type="radio" id="yes" name="whatsapp" value="yes">
+                            <label for="yes">Yes</label>
+                            <input type="radio" id="no" name="whatsapp" value="no">
+                            <label for="no">No</label>
+
+
+
+
+
+
+                            <div class="form-group">
+                                <label for="requirements"
+                                    style="position: relative; right: 635px; bottom: 100px; font-size: 16px;">Requirements
+                                    <span> * <style {color:red}></style></label>
+                                <textarea id="requirements"
+                                    placeholder="Let us know Your Requirements or Message if have any"></textarea>
+
+
+
+
+                            </div>
+
+
+                            <button type="submit">Submit</button>
+                </form>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>document.body.style.overflowX = 'hidden';</script>
+
+    <div class="GST-Fea">
+
+
+        <h1>Pvt Ltd Company Registration Online
+
+
+        </h1>
+        <p>Pvt Ltd Company Registration Online is possible through official MCA Govt Website but the problem i.e you
+            can’t do it your self the pvt ltd company registration. Because its required the additional digital
+            signature Attestation from a Practicing Chartered Accountant or Company Secretary or Lawyer etc. So It’s
+            mean you have to hire a Good CA to get done your Private Limited Company Registration in India anywhere.
+
+        <h1>Private Limited Company Registration Process</h1>
+        <p>Simple 5 Steps Process to Register Your Private Limited Company in India </p>
+        <p>#1 Apply for the Digital Signature Certificate (DSC) for all the Person who’s are will be director in the
+            Private Limited Company. <br>
+
+            #2 Apply for the DIN Registration for all the Person who’s will be director in the Pvt Ltd Company. <br>
+
+            #3 Now Just check about the Private Limited Company Name availability on the MCA Portal & Apply for the Name
+            approval of the Company. with RUN Form. <br>
+
+            #4 Once name has been approved, Proceed with the SPIC(INC 32) Private Limited Incorporation Form with the
+            E-MoA & E-AOA of the Pvt Ltd Company. <br>
+
+            #5 Now Apply for the PAN & TAN Application for the Private Limited Company which is issued with he
+            Certificate of Incorporation.</p>
+
+
+
+        <h1>Documents required for Private Limited Company Registration
+        </h1>
+        <p>Below are the Documents Checklist required for the Private Limited Company Registration –
+
+        </p>
+        <p>Personal Level Directors Documents for the Private limited Company – <br>
+
+            #1 Directors Personal Pan Card Copy <br>
+            #2 Directors Aadhar Card/Voter id/Passport/Driving License Copy anyone for the identity verification. <br>
+            #3 Passport Size Photograph <br>
+
+            Company Level Documents for the Pvt Ltd Company Registration – <br>
+
+            #4 Company Business Address Proof like Electricity Bill Copy with the NOC or Rent Agreement or Sale Deed
+            anyone <br>
+
+            for the more details checkout here about Documents Required for documents required for pvt ltd company</p>
+        <br>
+
+        <h1>Benefits of Private Limited Company Registration
+        </h1>
+        <p>Below are the benefits of the private limited company – <br>
+            #1 Easily Setup and recommend to Growing Startups. <br>
+            #2 Limited Liability for Members. <br>
+            #3 More Credibility as Compare to others. <br>
+            #4 Easily raise funds from Investors. <br>
+            #5 ESOP Option are available to motivated Employees. <br>
+            #6 Name Protection available.</p>
+
+        <h1>Pvt Ltd Company registration name availability
+        </h1>
+        <p>​Basically, in the private limited company, you have to choose a unique name. because once a name has been
+            registered with the MCA then no one other company take over the same name. It’s just like Brand
+            Registration.
+
+        </p>
+
+        <p>So you have to provide 3-4 name during the name approval process during the Private Limited Company
+            Registration Process. once you provide the company name, then MCA will check the same and approved as per
+            the name availability rules and regulations. you can check here about How to Search a Company Name.
+
+        </p>
+
+        <h1>Different Forms of Online Pvt Ltd Company Registration
+        </h1>
+        <p>​If you thinking Private Limited Company is very expensive for the starting then you can choose below <br>
+            <br>
+            – Proprietorship Firm <br>
+            – Partnership Firm <br>
+            – OPC Registration <br>
+            – LLP Registration
+        </p>
+
+        <h1>What is the Cost Involved in the Private Limited Company Registration</h1>
+        <p>​There are various cost involved in the pvt ltd company registration. below are the same – <br>
+            2 Digital Signature – (1000*2) = 2000 <br>
+            Director Identification Number (500*2) = 1000 <br>
+            Stamp Duty(Approx) = 2500 <br>
+            Notary Fees – 1000 <br>
+            Govt Fee for RUN+PAN+TAN = 1200 <br>
+            Professional Fee(Market Price) = 3000-5000/- INR <br>
+
+            So if you want to know more about details then checkout this Guide on Pvt Ltd Company Registration Fees </p>
+
+        <h1>How Much times takes to Register your Pvt Ltd Company ?
+        </h1>
+
+        <p>There is no Standered Timeline for the Private Limited Company Registration. Its all depend on the Documents
+            Submission and Incorporation Forms.
+            if we talk about the DSC & DIN then its takes min 1-2 days, for the Name approval its all depend on the govt
+            which takes avg 2-3 days. so you can takes min 10 days to complete your whole incorporation of the private
+            limited company.</p>
+
+        <strong>#1 Can i Register a Private limited Company on my Home Address ?
+        </strong>Yes, you can register your company at your residential address. there is no issue, you need only the
+        utility bill copy of the same. <br>
+
+
+        <strong>#2 Can i Register my family members in the company, if have no partner ?
+        </strong>Yeah, it’s a good idea to register on your family member on the Paper. even on later stage you can
+        change this or transfer the shares of the directors. <br>
+
+
+        <strong>#3 How many days takes to register a private limited company ?
+        </strong>Its take minimum 10 to 15 days avg. to register a private limited company in India. <br>
+
+
+        <strong>#4 How much cost for the private limited company ?
+        </strong>It’s cost nearby 10,999/- INR except in some state like Punjab, Kerala and MP State due to Stamp Duty.
+        <br>
+
+
+        <strong>#5 What is meant by the authorized capital in case of private limited company i.e is 1 lakh rupees ?
+        </strong>It’s a just a maximum share value which you can issue in your company so it’s not mean that you have to
+        invest the 1 lakh rupees. you can start your own private limited company with any amount of capital. <br>
+
+
+        <strong>#6 GST Registration is required for private limited company registration online ?
+        </strong>GST Registration is optional till the 20 lakh rupees turnover and for north east state 10 lakh rupees
+        turnover. it’s a completely separate registration apart from private limited company registration. <br>
+
+
+        <strong>#7 Registration with the Startup India is Possible ?
+        </strong>Yes, with the private limited company registration under startup india is possible. simply register
+        your pvt ltd company and register with the startup india portal. <br>
+
+
+        <strong>#8 Can i run multiple business under one private limited company ?
+        </strong>Yes you can run the multiple business under one private limited company. For ex if you deal into the
+        trading of the products and services both then you can mention in your MOA during the pvt ltd company
+        registration. <br>
+
+
+        <strong>#9 What is the DSC ( Digital Signature Certificate ) for Online Company Registration ?
+        </strong>In the private limited company all the eforms has been filed with the DSC. at the end of the process,
+        it will be delivered at your address via USB Token for the same. <br>
+
+
+        <strong>#10 How i register my company name or logo in India ?
+        </strong>Basically, with the private limited company registration, you company name has been secured. but if we
+        talk about the logo registration then there is separate trademark registration. you can checkout here more
+        details about Brand name registration. <br>
+
+
+        <h1>How to Register a Pvt Ltd Company in India
+        </h1>
+        <strong>Step 1. Application for DSC (Digital Signature Certificate).
+        </strong>
+        <p>Digital Signature is the first step to form a private limited company. All the eforms are online so its
+            required the digital signature instead of the physical signature. In the MOA & AOA of the company all the
+            directors or subscriber required the digital signature.
+
+            <br>
+        </p>
+        <p>Digital signature prepared by the govt authorized authority only such as Emdura or Sify etc. These certifying
+            agencies provide the digital signature in under class 2 and class 3. mainly its required the class 2 DSC
+            Only. if we talk about the DSC Cost then its cost around 1000/- INR per DSC.
+
+        </p>
+        <strong>Step 2. Apply for the DIN (Director Identification Number)
+        </strong>
+        <p>DIN is mandatory to become the director of any company. Only one din is allowed for one person. so after the
+            obtaining DSC you have to required to apply for the DIN. There are 2 ways to apply for the Digital Signture
+            –
+
+            <br>
+        </p>
+        <p>#1 DIR – 3 : If you are existing private limited company in India and now want to establish another company
+            then you can file the DIR-3. you have to submit the all directors identity and address proof like pan card
+            with aadhar card etc. but remember from the January 2018 its has been outdated.
+
+        </p>
+        <p>#2 SPICe (INC32 Form) : This is new option after the jan 2018 for the new companies. You have to require the
+            fillup new SPICe INC 32 Form with the director details & documents. but wait ! you can incorporate with only
+            3 directors for the same, if any case you have more directors then you can appoint them after the
+            incorporation of the pvt ltd company.
+
+        </p>
+
+        <strong>Step 3. Application for the Name availability.
+        </strong>
+        <p>This is one of the most important steps during the private limited company incorporation. you have to choose
+            a unique identity name for your company. there are 2 ways to register or book your name for the private
+            limited company.
+
+        </p>
+        <p>#1 Let suppose before apply for the DSC or DIN if you want to book your private limited company name with the
+            MCA then you can use the newly RUN ( Reserve Unique Form) for the same. but remember its gives you only 1
+            chance to submit your company name, if any case due to trademark violation or existing company names
+            violation your application will be rejected then you have to again apply for the same. so you have to follow
+            the company registration name guidelines. but Don’t worry there is relaxation from 23rd March 2018, Now you
+            can submit the 2 proposed name with the 1 resubmission through RUN Form.
+
+        </p>
+        <p>#2 This is one of the fasted ways to get register your private limited company with the government. In this
+            way, you have to submit the SPICe INC 32 Form with the proposed name if your name is approved then your
+            whole company has been registered for the same. but remember if any case your name is rejected then there is
+            only 1 more chance to resubmit the application without any extra govt charges. but if you still fail in the
+            2nd option then you have to again start the process from scratch and pay the government fee for the SPICe
+            inc32.
+
+        </p>
+
+        <strong>Step 4 : Filing of the EMoa and EAOA for the register private limited company :
+        </strong>
+        <p>Previously before introducing the SPICe’s form you have to require the file MOA & AOA of the Company
+            physically paper to the MCA but after the introduce new SPICe’s form you have to just attach Electronic MOA
+            & AOA of the Company.
+
+        </p>
+        <p>Note – SPICe’s INC 32 Forms and all other above process required the digital signature certification from the
+            Practising Chartered Accountant or Company Secterary or Lawyer. So you can do it yourself without helping of
+            the professional. Take myonlineca service and Be Relex !
+
+        </p>
+
+        <strong>Step 5 : Apply for the PAN & TAN of the Company
+        </strong>
+        <p>Previously before introducing the new forms, during the private limited company registration required to
+            separately apply for the PAN & TAN for the same. but now you can apply through SPICe’s form together.
+
+        </p>
+        <strong>Step 6 : Issued Certificate of Incorporation by RoC with PAN & TAN
+        </strong>
+        <p>If everything is perfect and approved by MCA Registrar of Companies then they will be issued Certificate of
+            Incorporation with PAN & TAN for the same.
+
+        </p>
+        <strong>Step 7 : Opening a Current Bank Account on Company Name –
+        </strong>
+        So this is the last step for your private limited company. after the getting certificate of incorporation, you
+        have to simply open a current bank account as per your choice on the basis of the documents which is provided by
+        us.
+        
+            
+        </body>
+        <script> function scrollToSection() {
+            const section = document.getElementById('book1');
+            section.scrollIntoView({ behavior: 'smooth' });}</script>
+        </html>

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+
+        .main-center {
+            height: 550px;
+            width: 100%;
+            background: #e7717d;
+            position: relative;
+            bottom: 20px;
+
+        }
+
+        .ICT {
+            width: 718px;
+            height: 78px;
+            display: block;
+            position: relative;
+            justify-content: center;
+
+        }
+
+        .ICT p {
+            position: relative;
+            top: 200px;
+            left: 300px;
+            color: white;
+            font-size: 60px;
+            margin-bottom: 30px;
+            white-space: nowrap;
+
+
+        }
+
+        .ICT .p2 {
+            font-size: 20px;
+            position: relative;
+            left: 200px;
+            width: 750px;
+        }
+
+        .ICT-btn {
+            position: relative;
+            margin-top: -20px;
+            left: 500px;
+            top: 250px;
+            width: 234px;
+            height: 55px;
+            font-size: 22px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-weight: 700;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+
+        }
+
+        .ICT-btn:hover {
+            background-color: #6747c7;
+        }
+
+        h1 {
+            margin-top: 20px;
+            margin-left: 50px;
+            font-size: 35px;
+        }
+
+        p {
+            margin-top: 20px;
+            margin-left: 50px;
+            margin-right: 50px;
+            font-size: 17px;
+            word-spacing: 8px;
+
+        }
+
+        .Filing-fee {
+            width: 100%;
+            height: 400px;
+            background-color: #e7717d;
+            margin-top: 50px;
+        }
+
+        .Filing-fee p {
+            color: white;
+            line-height: 30px;
+            font-weight: 525;
+        }
+
+        .return {
+            font-size: 35px;
+            margin: 0px 0px 0px 30px;
+            padding: 50px 0px 20px;
+            color: white;
+            border-bottom: 2px solid white;
+            width: 550px;
+        }
+
+        .book-btn {
+            width: 150px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            margin: 20px 0px 0px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            cursor: pointer;
+
+        }
+
+        .book-btn:hover {
+            background-color: #6747c7;
+        }
+
+        .form-main {
+            font-size: 35px;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+        }
+
+        .form-box {
+            height: 900px;
+            width: 90%;
+            background-color: #f0f4ff;
+            margin: 20px 5% 0px 5%;
+        }
+
+        .form-ITF {
+            width: 700px;
+            height: 700px;
+            background-color: white;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            margin-left: 260px;
+            top: 70px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-header {
+            height: 129px;
+            width: 700px;
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid black;
+        }
+
+        .form-header h2 {
+
+            font-size: 32px;
+            width: 662px;
+            height: 47px;
+            position: relative;
+            left: 200px;
+            white-space: nowrap;
+        }
+
+        .form-header p {
+            font-size: 16px;
+            width: 662px;
+            height: 26px;
+            color: #57647E;
+            margin-top: 50px;
+            white-space: nowrap;
+            position: relative;
+            right: 230px;
+            margin-top: 80px;
+
+        }
+
+        .form-details {
+            width: 662px;
+            height: 300px;
+            position: relative;
+            top: 200px;
+            right: 450px;
+            white-space: nowrap;
+            font-size: 15px;
+            margin-top: 15px;
+            line-height: 30px;
+
+        }
+
+        form {
+            position: absolute;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            position: relative;
+            top: 180px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+            margin-bottom: 50px;
+            margin-left: 100px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 33%;
+            box-sizing: border-box;
+            position: relative;
+            right: 200px;
+            margin-top: 30px;
+        }
+
+        .tooltip {
+            position: absolute;
+            top: -35px;
+            left: 5px;
+            background-color: #2c3e50;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+            display: none;
+        }
+
+        .form-group:hover .tooltip {
+            display: block;
+        }
+
+        small {
+            display: block;
+            margin-top: 39px;
+            color: #777;
+
+            position: relative;
+            right: 139px;
+        }
+
+
+        .radio-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .radio-group label {
+            margin-right: 10px;
+            margin-left: 5px;
+        }
+
+        button {
+            position: relative;
+            top: 220px;
+            left: 300px;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .ITR-type h4 {
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+
+        .ITR-type ul li {
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+    </style>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">
+                <div class="logo">MY Wealth</div> 
+               </a>
+            <ul class="nav-links">
+                <li><a href="ITF.html">Income Tax Filling</a></li>
+                <li><a href="Consultancy.html">Book Consultancy</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Popular Services &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="ITF.html">ITR Filing Services</a>
+                        <a href="ISO.html">ISO Certification</a>
+                        <a href="GSTReg.html">GST Registration</a>
+                        <a href="GSTFilling.html">GST Return Filing</a>
+                        <a href="MSME.html">MSME Registration</a>
+                        <a href="companyreg.html">Company Registration</a>
+                        <a href="firm.html">Firm Registration</a>
+                        <a href="fssai.html">FSSAI License</a>
+                        <a href="trademark.html">Trademark Registration</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Bussiness Registration &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="companyreg.html">Company Registration</a>
+                        <a href="firm.html">Firm Registration</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">GST Services &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="GSTReg.html">GST Registration</a>
+                        <a href="GSTFilling.html">GST Return Filing</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Support &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="#">Contact Us</a>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+    </header>
+
+    <div class="main-center">
+        <div class="ICT">
+            <p>ISO Certification in India</p>
+            <p class="p2">Apply for ISO Certification and Registration in India with Lowest Cost.
+                ​Start Just at 1499/- INR</p>
+
+
+            <div class="ICT-btn" onclick="scrollToSection()">
+                GET PROPOSAL &#9654
+            </div>
+
+        </div>
+    </div>
+
+
+    <p>Are you looking for ISO Certification in India ? Then this is Good Place to find about How to Get ISO
+        Certification in India ? Here we guide to you about ISO Certification Process , Cost , Consultant and Online
+        Registration. We also provide to you about Type of ISO Certificate , ISO Certification Body , Required Documents
+        for ISO Registration.</p>
+
+    <h1>Introduction about ISO Certification in India</h1>
+    <p>In today’s competitive world, you have to provide people with better quality services and to maintain a good
+        image in the market. Even if your organization wants to sell and reach the international market, you have to
+        prove your organization worthiness and your products in the market. ISO Certification in India helps in that.
+        ISO Certification certifies that your goods/ services, as well as your organization, provide quality and other
+        standards as per the international standards. In this article we will talk about ISO certification, types,
+        bodies, cost, process and documents required for ISO Certification in India and how MyOnlineCA will help you to
+        get your ISO certificate. MyOnlineCA is a web service provider which is providing services of registration under
+        various recognized authority like Ministry of corporate affairs, Income tax department of India and others. So
+        let us first begin with what ISO is.</p>
+
+
+    <h1>What is ISO Registration</h1>
+    <p>nternational standard organization for standards (ISO) is an international entity which develops ISO standards in
+        furtherance of international trade. It was formed in 1947 as an organization to promote international industrial
+        and commercial standards. Around 162 countries are members of ISO and has been laying down standards for
+        international trade and facilitates world trade by providing a common standards for all the countries.</p>
+
+    <h1>What is ISO Certification in India</h1>
+    <p>ISO certification ensures that the products or services provided are meeting standards and quality. ISO is an
+        independent and nongovernmental organization providing standards for quality, efficiency and safety of goods and
+        services of an organization. The ISO certificate certifies the organization’s quality management systems. There
+        are various objectives of ISO some of which are: increase the quality and productivity of the organization,
+        making organization hub for profitable opportunities, customer and employee satisfaction, and best quality
+        products and services.</p>
+
+
+
+
+
+    <div class="Filing-fee">
+        <div class="return">
+            ISO Registration Fees
+        </div>
+        <p>Pricing : 1499/- INR ( All Inclusive)</br>
+            Include :</br>
+            #1 ISO Registration by Professional Legal Expert</br>
+            #2 ISO Registration application Preparation and Drafting</br>
+            #3 Submission of the ISO Registration with the Govt with the proper documents.</br></p>
+
+
+
+        <div class="book-btn" onclick="scrollToSection()">
+            BOOK NOW
+        </div>
+
+    </div>
+    <div id="book1" class="form-main">
+        📅 Book Free Consultation Right Now
+    </div>
+
+    <div class="form-box">
+        <div class="form-ITF">
+            <div class="form-header">
+                <h2>ISO Registration Certificate</h2>
+                <p>Trusted by 1 lakh + Customer across India</p>
+            </div>
+
+
+            <form>
+                <div class="form-group">
+                    <label for="name">Name <span> * <style {color:red}></style></label> <br>
+                    <input type="text" id="name" name="name" placeholder="Steve Jobs" required>
+                    <small>Type your Good Name</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email <span> * <style {color:red}></style></label>
+                    <input type="email" id="email" name="email" placeholder="steve@apple.com" required>
+                    <div class="tooltip">Your Email Please where you need the proposal</div>
+                    <small>Type your Valid Email</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">Contact Number <span> * <style {color:red}> </style></span></label>
+                    <input type="text" id="contact" name="contact" placeholder="9876543210" required> <br>
+                    <small>Insert No without 0 or +91. Ex - 9876543210</small>
+                </div>
+
+                <div class="form-group">
+                    <label>Are you on WhatsApp? <span> * <style {color:red}></style></label>
+                    <div class="radio-group">
+                        <input type="radio" id="yes" name="whatsapp" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="whatsapp" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+
+
+
+        </div>
+    </div>
+
+    </div>
+
+    <div class="ITR-type">
+        <h1>Type of ISO Certification in India</h1>
+        <p>There are various types of ISO certification for your goods and services. You have to select certifications
+            on the basis of your business and the goods and services you provide. Some of the types of ISO
+            certifications are the following:</p></br>
+        <p> 1. ISO 9001 for quality management system which provides confidence in your product</br>
+            2. ISO 13485 for sector-specific quality standard</br>
+            3. ISO 14001 for environmental management system</br>
+            4. OHSAS 18001 for occupational health and safety management system</br>
+            5. AS9100 for quality management system standards for the aerospace industry</br>
+            6. ISO ITAR for manufacturing, sales and distribution of technology</br>
+            7. Lean Manufacturing for maximization of output while minimizing the waste</br>
+            8. R2 Certification for handling electronic waste responsibly</br></p>
+
+
+
+        <h1>ISO Certification Body</h1>
+        <p>It must be kept in mind that ISO itself does not provide certificates for quality however, parties can grant
+            you certification. There are various ISO certification bodies in India like Bureau Veritas, BSI, Intertek,
+            TuvNord etc. which provide certification. It has to be kept in mind that while selecting an ISO
+            certification body you have to choose a proper third party to certify your business. It should have
+            accreditation from ISO or at least fulfil the criteria for ISO Accreditation bodies. One can see the
+            following attributes for selecting proper ISO Certification Body:</p>
+
+        <p> 1.Should have a good reputation in the market<br>
+            2.Should have accredited i.e. licensed to provide you ISO Certification<br>
+            3.Must be specialized in the your area of work and ISO Certificaion<br>
+            4.Should have more experience<br>
+            5.Provides integrated audits<br>
+            6.Is flexible towards your organization and to work with your organization<br>
+            7.Cost must be reasonable<br></p>
+
+
+        <h1>Documents required for ISO Certification in India</h1>
+        <p>The documents required for ISO Certification depends upon the type of ISO Certification you are obtaining for
+            your organization. Let’s take the example of most commonly used ISO certification i.e. 9001 which is the
+            quality management system (QMS). Some of the documents have been mentioned belew which are mandatory
+            documents, mandatory records and non mandatory documents for such ISO Certification:</p>
+
+
+        <p> 1. Scope of the QMS – In the scope of the QMS Mandatory records are Monitoring and measuring equipment
+            calibration records and Non Mandatory documents are Procedure for addressing risks and opportunities.<br>
+            2. QMS Policy and objectives – QMS Policy and objectives Mandatory records are about design and development
+            outputs review and non mandatory documents are Procedure for design and development.<br>
+            3. Criteria for evaluation – In the Criteria for evaluation mandatory Records about design and development
+            inputs and Non mandatory documents are sale procedure.<br>
+            4. The selection of suppliers –mandatory records of suppliers are Records of design and development controls
+            and outputs.<br> </p>
+
+
+
+
+
+        <h1>ISO Certification Process</h1>
+        <p>
+            1. Select ISO standard in which you want a certificate and an ISO certification body for certification <br>
+            2. Make an application to the ISO certification body in its prescribed format containing the rights and
+            duties of the owner of the organization and liabilities issues, access rights and confidentiality
+            clauses.<br>
+            3. The ISO certification body will review your application and documents provided in the application. The
+            ISO certification body will review the quality manuals and documents of your organization. <br>
+            4. The ISO certification body identifies the major weakness/ faults in the system and then will provide a
+            cure period to the organization to rectify such faults and weakness in the organization.<br>
+            5. The Organization has to prepare an action plan for curing the faults mentioned by the ISO Certification
+            body. It shall contain a list of actions to be taken for meeting the standards.<br>
+            6. Then the ISO certification body will carry aninitial certification audit to check the changes made and
+            analyze the non-compliances in the organization. The ISO Certification body will divide the non-compliances
+            into minor and major non-compliances<br>
+            7. In case all the non-compliance are fulfilled then the ISO audit report will be created and you will be
+            granted ISO certification.<br>
+
+
+        </p>
+
+        <p>
+            Hope now you are aware about the ISO Certification Process in India
+        </p>
+
+
+        <h1>ISO Certification Cost</h1>
+        <p>While applying for ISO certification, the organization always has to check the cost which is involved in the
+            ISO certification. However, the cost of ISO certification varies from organization to organization, and they
+            are charged differently on the following basis:</p>
+
+        <p>
+            1. Number of employees<br>
+            2. Implemented ISO standard<br>
+            3. Number of processes involved<br>
+            4. Level of risk in the nature of work<br>
+            5. the number of working shifts etc.<br>
+        </p>
+        <p>
+            So above factors decide the ISO Registration Cost in India.
+        </p>
+
+        <h1>Timeline in ISO Registration</h1>
+        <p>The time for getting ISO certification depends upon the size of an organization. The time thus varies from an
+            organization to organization. It generally takes about 6-8 months for the small and micro-organization. It
+            generally takes about 8-12 months for a medium enterprise. It generally takes 12-15 months for large
+            organization.</p>
+
+
+        <h1>What is ISO Certification Consultant ?</h1>
+        <p>
+            Due to more and more competition, organizations are also focusing on the quality of their product and making
+            a good public image. ISO certification helps to certify the image and quality of your goods and services as
+            well as your organization. Many people who are expert in the ISO standards, who are experienced are becoming
+            consultants. Such ISO Certification Consultants advise and makes the organizations understand the process as
+            well as your organization and tell you the best way to implement ISO certification and its requirements. So
+            you can easily find ISO Certification Consultant Online.
+        </p>
+
+
+
+        <h1>How MyWealth Helps on ISO Registration Online?</h1>
+
+        <p>MyWealth is India’s leading online legal services provider. It is associated with more than 100 startup and
+            companies per month across India. MyWealth has been providing low cost and feasible services which every
+            startup requires. MyWealth works as an aggregator for providing ISO certification and consultant through
+            our various expertise will help your organization regarding ISO Certification. MyWealth provides
+            assistance and solves your queries through mail, phone and WhatsApp. MyWealth helps organization in
+            determining the type of ISO which you as an organization should obtain and then facilitating you to obtain
+            ISO Certification.</p>
+
+
+
+        <h1>Conclusion :</h1>
+        <p>As you can see in above article that ISO Certification can be done easily. ISO certification ensures that the
+            products or services provided are meeting standards and quality. ISO as an independent body provides
+            standards for quality, efficiency and safety of goods and services of an organization. The ISO certificate
+            certifies the organization’s quality management systems. All you have to do is select the proper type of ISO
+            Certification and an ISO certification Body which will certify that your products are upto the ISO
+            standards. An organization which are looking forward to entering into the global market it is beneficial to
+            get ISO Certification so as to certify that your products are of good quality and possess the minimum
+            standards provided by the ISO. So if you are thinking of starting a business and you want to enter into
+            global market then you should get ISO certification.</p>
+
+        <p>As you can see MyWealth is a web service provider which provides services of registration under various
+            recognized authority and team is giving their expert advice to you so it will be beneficial for you.
+            MyWealth will apply for ISO certificate for you and you will get your certificate in shortest time. If you
+            want to take service from MyOnlineCA then you can apply on the website or you can download the mobile app
+            and apply through mobile application so it will be more convenient.</p>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+<script>
+    function scrollToSection() {
+            const section = document.getElementById('book1');
+            section.scrollIntoView({ behavior: 'smooth' });}
+</script>
+
+</html>

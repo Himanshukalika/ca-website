@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #575757;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+
+.navbar {
+    background-color: #e2e7e6;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-links li {
+    margin-left: 60px;
+}
+
+.navbar .nav-links li a {
+    color:black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    background-color: #e2e7e6;
+}
+
+.navbar .nav-links li a:hover {
+    color: #800080;
+    border: 1.5px solid white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navbar .menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.hero-section {
+    background-image: url("output_image.png");
+    height: 750px;
+    background-size: cover;
+    justify-content: center;
+}
+
+.main-msg {
+   display: block;
+   position: relative;
+   margin-left: 120px;
+   top: 300px;
+   font-size: 30px;
+}
+.main-msg p{
+    margin-left: 30px;
+    font-weight: 700;
+    top: 300px;
+    font-size: 45px;
+    line-height: 50px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(to right, #1d0e63, #ff5722);
+    height: 159px;
+    align-items: center;
+}
+
+.start {
+    height: 60px;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 48px;
+    color: white;
+    
+}
+.start-second {
+    height: 60px;
+    font-size: 35px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+.button-get {
+    background: rgb(3, 3, 92);
+    font-size: 25px;
+    font-weight: 700;
+    width: 397px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    font-size: 55px;
+    margin-top: 30px;
+    font-weight: 700;
+    background-color: #e2e7e6;
+    padding-bottom: 30px;
+}
+
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+    height: 1700px;
+    
+}
+
+.box {
+    height: 700px;
+    width: 23%;
+    background-color: #e2e7e6;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.box-img {
+    height: 300px;
+    background-size: cover;
+    border-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.box-content {
+    text-align: center;
+}
+
+.box-content h2 {
+    color: #007185;
+    margin-top: 20px;
+}
+.box-content p {
+    line-height: 25px;
+}
+.enquire-btn{
+    font-size: 20px;
+    background-color: green;
+    height: 50px;
+    width: 150px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin-left: 80px;
+    margin-top: 30px;
+    color: white;
+}
+
+
+
+/* Container for the form */
+.container {
+    width: 700px;
+    height: 700px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    margin-top: -250px;
+}
+
+/* Header styling */
+.header p {
+    font-size: 18px;
+    color: #5a5a5a;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Form container */
+.form-container h2 {
+    background-color: #4a007d;
+    color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.form-container p {
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+
+
+/* Container for the form group */
+.form-group {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
+    
+}
+
+/* Label styling */
+.form-group label {
+    font-weight: bold;
+    margin-right: 10px;
+    flex-shrink: 0;
+    width: 80px; 
+}
+
+/* Required asterisk color */
+.form-group label span {
+    color: red;
+}
+
+/* Input field styling */
+.input-wrapper {
+    position: relative;
+    width: 300px;
+}
+
+.input-wrapper input[type="text"] {
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Small text below input */
+.input-wrapper small {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+    font-size: 12px;
+}
+
+
+
+/* Container for the form group */
+.form-group {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+/* Label styling */
+.form-group label {
+    font-weight: bold;
+    margin-right: 10px;
+    flex-shrink: 0;
+    width: 200px; /* Adjust as needed */
+}
+
+/* Required asterisk color */
+.form-group label span {
+    color: red;
+}
+
+/* Input field and radio button wrapper */
+.input-wrapper {
+    width: 100%;
+}
+
+/* Radio button styling */
+.radio-group label {
+    display: flex;
+    
+    font-size: 14px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 8px;
+}
+
+/* Textarea styling */
+.input-wrapper textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Small text below textarea */
+.input-wrapper small {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+    font-size: 12px;
+}
+#sub-options label{
+    font-weight: bold;
+    margin-right: 150px;
+    flex-shrink: 0;
+    width: 200px;
+    display: flex;
+}
+    .type-com{
+        width: 200px;
+        height: 18px;
+        margin:0px 10px 0px 30px;
+        font-size: 16px;
+        font-weight: 700;
+
+    }
+ .type-gst{
+    width: 200px;
+    height: 18px;
+    margin:0px 10px 0px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+ }
+ .submit-btn{
+      height: 100px;
+      background-color: blue;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+ }
+ .submit-btn h3{
+    font-size: 30px;
+    color: white;
+ }
+.govt{
+    width: 100%;
+    background-color: #e2e7e6;
+    margin-top: 150px;
+    
+}
+.foot{
+    border-top: 1px solid black;
+}
+
+
+
+footer {
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100vw;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #ddd;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #ddd;
+  }
+  
+  footer p {
+    color: #ccc;
+  }
+  
+  footer img {
+    max-width: 100%;
+    height: auto;
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+  }

@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui;
+
+        }
+
+
+        .main-center {
+            height: 550px;
+            width: 100%;
+            background: #e7717d;
+
+        }
+
+        .ICT {
+
+            background: #e7717d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+
+        .ICT p {
+
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-top: 200px;
+
+
+        }
+
+        .ICT .p2 {
+            font-size: 20px;
+            position: relative;
+            margin-top: 25px;
+        }
+
+        .ICT-btn {
+            position: relative;
+            margin-top: 45px;
+            margin-left: 550px;
+            width: 234px;
+            height: 55px;
+            font-size: 22px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-weight: 700;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+
+        }
+
+        .ICT-btn:hover {
+            background-color: #6747c7;
+        }
+
+        .form-main {
+            font-size: 35px;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+        }
+
+        .form-box {
+            height: 1200px;
+            width: 90%;
+            background-color: #f0f4ff;
+            margin: 20px 5% 0px 5%;
+        }
+
+        .form-ITF {
+            width: 700px;
+            height: 1000px;
+            background-color: white;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            margin-left: 260px;
+            top: 70px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-header {
+            height: 140px;
+            width: 700px;
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid black;
+
+        }
+
+        .form-header h2 {
+
+            font-size: 32px;
+            width: 662px;
+            height: 47px;
+            position: relative;
+            left: 150px;
+            white-space: nowrap;
+        }
+
+        .form-header p {
+            font-size: 16px;
+            width: 662px;
+            height: 26px;
+            color: #57647E;
+            margin-top: 50px;
+            white-space: nowrap;
+            position: relative;
+            left: -250px;
+            margin-top: 80px;
+
+        }
+
+        .form-details {
+            width: 662px;
+            height: 300px;
+            position: relative;
+            top: 200px;
+            right: 450px;
+            white-space: nowrap;
+            font-size: 15px;
+            margin-top: 15px;
+            line-height: 30px;
+
+        }
+
+        form {
+            position: absolute;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            position: relative;
+            left: 120px;
+            top: 190px;
+            white-space: nowrap;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+            margin-bottom: 50px;
+            margin-left: 100px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 33%;
+            box-sizing: border-box;
+            position: relative;
+            margin-top: 30px;
+        }
+
+        .tooltip {
+            position: absolute;
+            top: -35px;
+            left: 5px;
+            background-color: #2c3e50;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+            display: none;
+        }
+
+        .form-group:hover .tooltip {
+            display: block;
+        }
+
+        small {
+            display: block;
+            margin-top: 39px;
+            color: #777;
+
+            position: relative;
+            right: 139px;
+        }
+
+
+        .radio-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .radio-group label {
+            margin-right: 10px;
+            margin-left: 5px;
+        }
+
+        button {
+            position: relative;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100px;
+            top: 260px;
+            right: 790px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 300px;
+            height: 100px;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: none;
+            position: relative;
+            right: 695px;
+            bottom: 100px;
+        }
+
+        .GST-Reg {
+            position: relative;
+            top: 210px;
+        }
+
+        .GST-Reg p {
+            margin-top: 20px;
+        }
+
+        .GST-Reg h1 {
+            margin-top: 20px;
+        }
+
+        .Filing-fee {
+            width: 1400px;
+            height: 600px;
+            background-color: #e7717d;
+            margin-top: 50px;
+            position: relative;
+
+
+            white-space: nowrap;
+        }
+
+        .list-container {
+            padding: 20px;
+            margin-left: 50px;
+            list-style-type: disc;
+            line-height: 2;
+            color: white;
+        }
+
+
+        .return {
+            font-size: 35px;
+            margin: 0px 0px 0px 30px;
+            padding: 50px 0px 20px;
+            color: white;
+            border-bottom: 2px solid white;
+            width: 550px;
+        }
+
+        .book-btn {
+            width: 150px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            margin: 20px 0px 0px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            cursor: pointer;
+
+        }
+
+        .GST-Fea {
+            margin-top: 50px;
+
+            position: relative;
+            top: 250px;
+        }
+
+        .GST-Fea p {
+            margin-right: 70px;
+            margin-top: 10px;
+            white-space: wrap;
+            line-height: 2;
+
+        }
+
+        .GST-Fea h1 {
+            margin-top: 20px;
+        }
+
+        strong {
+            white-space: wrap;
+            line-height: 2;
+            margin-top: 50px;
+        }
+    </style>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">
+                <div class="logo">MY Wealth</div> 
+               </a>
+            <ul class="nav-links">
+                <li><a href="ITF.html">Income Tax Filling</a></li>
+                <li><a href="Consultancy.html">Book Consultancy</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Popular Services &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="ITF.html">ITR Filing Services</a>
+                        <a href="ISO.html">ISO Certification</a>
+                        <a href="GSTReg.html">GST Registration</a>
+                        <a href="GSTFilling.html">GST Return Filing</a>
+                        <a href="MSME.html">MSME Registration</a>
+                        <a href="companyreg.html">Company Registration</a>
+                        <a href="firm.html">Firm Registration</a>
+                        <a href="fssai.html">FSSAI License</a>
+                        <a href="trademark.html">Trademark Registration</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Bussiness Registration &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="companyreg.html">Company Registration</a>
+                        <a href="firm.html">Firm Registration</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">GST Services &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="GSTReg.html">GST Registration</a>
+                        <a href="GSTFilling.html">GST Return Filing</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Support &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="#">Contact Us</a>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+    </header>
+
+    <div class="main-center">
+        <div class="ICT">
+            <p>Proprietorship Firm Registration Online
+
+            </p>
+            <p class="p2">Sole Proprietorship Firm Registration Online with Govt Certified Portal <br>
+                Starting Package Just Only at 1499/- INR
+
+
+            </p>
+
+            <div class="ICT-btn" onclick="scrollToSection()">
+                GET PROPOSAL &#9654
+            </div>
+
+        </div>
+    </div>
+
+
+    <h1 style="margin: 20px 0px 0px 30px;">Proprietorship Firm Registration ? </h1>
+
+
+    <p style="margin-left: 30px; margin-right: 30px; line-height: 1.5;"> Sole Proprietorship Firm Registration is Single
+        Person Firm Registration i.e is the main objective is Open
+        Current Bank Account on the Name of Business so it’s a simply firm which is enable doing business in India with
+        Less
+        Compliance and Less Costing. a Sole Proprietorship Firm require minimum 2 Legal Entity Proof for open a Current
+        Bank
+        Account.
+
+
+
+    </p>
+
+    <h1 style="margin: 20px 0px 0px 30px;">2 Legal Entity Proof for the Sole Proprietorship Registration in India :
+
+    </h1> <br>
+    <strong style="margin-left: 30px; margin-right: 30px; line-height: 1.5;">Option 1 : MSME Registration Certificate +
+        Chartered Accountant Business Certification.
+    </strong>
+    <p style="margin-left: 30px; margin-right: 30px; line-height: 1.5;">Its applicable in below conditions –<br>
+        #1 deals within the state Only. (Ex Delhi to Delhi) <br>
+        #2 within state expected turnover or sales less than 20 lakh rupees <br> <br></p>
+
+    <strong style="margin-left: 30px; margin-right: 30px; line-height: 1.5;">Option 2 : GST Registration Certificate as
+        Proprietorship Entity
+    </strong>
+    <p style="margin-left: 30px; margin-right: 30px; line-height: 1.5;">Its applicable in below any ONE conditions –
+        <br>
+        #1 deal inter-state sales or services. (Ex Rajasthan to Delhi) <br>
+        #2 Ecommerce or internet based business. <br>
+        #3 Trader or Retailer or Mfg or Aggregator <br>
+        #4 Within state have more than 20 lakh rupees turnover. <br> <br>
+
+        So your first step to choose the right legal entity certificate to register your proprietorship firm
+        registration.
+
+    </p>
+
+
+
+    <div class="Filing-fee">
+        <div class="return">
+            Proprietorship Firm Fees
+
+
+
+
+        </div>
+        <p style="color: white; white-space: wrap; margin-left: 40px;margin-right: 100px; margin-top: 20px;">There are 2
+            Pricing Package by MyWealth <br>
+
+            Package 1 : Start Only 1499/- INR (all inclusive) <br>
+            Includes :</p><br>
+        <strong style="color: white; white-space: wrap; margin-left: 40px;margin-right: 100px;">MSME Registration
+            Certificate + CA Certificate
+
+        </strong>
+
+
+
+
+
+        <p style="color: white; white-space: wrap; margin-left: 40px;margin-right: 100px; margin-top: 30px;">
+            Package 2 – Start Only 1999/- INR( All inclusive)
+            <br> Include : <br>
+            <strong style="color: white; white-space: wrap; margin-right: 100px;">MSME + GST
+                Registration Certificate as Proprietorship Firm
+
+
+
+            </strong>
+
+
+
+        </p>
+
+        <p style="color: white; white-space: wrap; margin-left: 40px;margin-right: 100px; margin-top: 30px;"> Not Enough
+            ?
+        </p>
+        <strong style="color: white; white-space: wrap; margin-right: 100px; margin-left: 40px;">
+            Free with Every Package :
+
+        </strong>
+
+        <p style="color: white; white-space: wrap; margin-left: 40px;margin-right: 100px; margin-top: 10px;">
+            #1 10+ Premium Legal Agreements to start your new firm <br>
+            #2 Premium Invoice Templates </p>
+
+
+
+
+
+
+        <div class="book-btn" onclick="scrollToSection()">
+            BOOK NOW
+        </div>
+
+
+
+        <div id="book1" class="form-main">
+            📅 Book Free Consultation Right Now
+
+
+        </div>
+
+        <div class="form-box">
+            <div class="form-ITF">
+                <div class="form-header">
+                    <h2>Proprietorship Mobile App
+                    </h2>
+                    <p>
+                        100% Govt Certified Platform with Registered 50k+ Firm's
+                    </p>
+                </div>
+
+                <form>
+                    <div class="form-group">
+                        <label for="name" style="position: relative; left: 185px;">Name<span> * <style {color:red}>
+                                </style>
+                        </label> <br>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        <small></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" style="position: relative; left: 185px;">Email<span> * <style {color:red}>
+                                </style></label>
+                        <input type="email" id="email" name="email" placeholder="Enter valid email-ID" required>
+                        <div class="tooltip">Your Email Please where you need the proposal</div>
+                        <small></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact" style="position: relative; left: 185px;">Contact Number<span> * <style
+                                    {color:red}>
+                                </style></span></label>
+                        <input type="text" id="contact" name="contact" placeholder="Enter your MOB Number" required>
+                        <br>
+                        <small></small>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="form-group">
+                        <label style="position: relative; left: 185px;">Are you on WhatsApp? <span> * <style
+                                    {color:red}>
+                                </style></label>
+                        <div class="radio-group">
+                            <input type="radio" id="yes" name="whatsapp" value="yes">
+                            <label for="yes">Yes</label>
+                            <input type="radio" id="no" name="whatsapp" value="no">
+                            <label for="no">No</label>
+
+
+
+
+
+
+                            <div class="form-group">
+                                <label for="requirements"
+                                    style="position: relative; right: 635px; bottom: 100px; font-size: 16px;">Requirements
+                                    <span> * <style {color:red}></style></label>
+                                <textarea id="requirements"
+                                    placeholder="Let us know Your Requirements or Message if have any"></textarea>
+
+
+
+
+                            </div>
+
+
+                            <button type="submit">Submit</button>
+                </form>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>document.body.style.overflowX = 'hidden';</script>
+
+    <div class="GST-Fea">
+
+
+        <h1>Proprietorship Firm Registration Process
+
+
+
+        </h1>
+        <p>There are simply 3 steps to register your Firm with MyOnlineCA
+
+        </p> <br> <br>
+
+        <p>​Step 1 : Fill-Up your Proprietorship Firm Application Simplified form. <br>
+            Step 2 : Make payment of package online via cards/netbanking/upi/wallets etc in a secure way <br>
+            Step 3 : Assign a dedicated CA/Legalexperts & submit the docs online via emails or WhatsApp. Be Relax ! your
+            work is done.</p>
+
+
+
+        <h1>How to Register Proprietorship Firm Online ?
+        </h1>
+        <p>​As mentioned above proprietorship firm required 2 legal entity proof so these can be done online with the
+            help of MyWelth at the cheapest cost. Why do it online through MyWealth ? there are 4 reason –
+
+        </p> <br> <br>
+        <p>#1 Get better & cheap pricing package as compare to Agents or traditional & other portals. <br>
+            #2 MyOnlieCA is Recognized Company under Govt Official Startup India Programme with Trusted over 10k
+            customer. <br>
+            #3 Highest Social True Reviews on Facebook with 5 Star Ratings. <br>
+            #4 Dedicated Support via Emails | Calls | WhatsApp. <br>
+            #5 Free Premium Legal Consultancy to Start your new business. <br>
+            #6 100% Money Back Guarantee on any service.</p> <br>
+
+
+
+        <h1>Documents Required for Sole Proprietorship Registration
+
+        </h1>
+        <p>​#1 KYC of Applicant i.e Pan Card + Aadhar Card or Voter or Driving or Passport etc. <br>
+            #2 Firm Address Proof : Electricity Bills copy or gas bill or phone bill etc. (No issues if it’s on other
+            names) <br> <br>
+        </p>
+        <p>For the <strong> GST Additional : <br></strong>
+            #4 Passport Size Photograph of the applicant <br>
+            #5 Personal Bank Account Cancel Cheque or Bank Statement or Passbook Front Page anyone.</p>
+
+
+        <h1>Time to Register Proprietorship Firm ?
+        </h1>
+        <p>​#1 MSME Registration + CA Certification | 2-6 days avg from working on the assignment. <br>
+            #2 GST Registration | avg 7 days from working on the assignment.How to Search a Company Name. <br></p>
+
+        <h1>Benefits of Proprietorship Firm Registration ?
+
+        </h1>
+        <p>Below are Advantages of Proprietorship Firm –
+
+
+
+        </p> <br>
+
+        <p>​#1 1 Person Required as Single Entrepreneur. <br>
+            #2 Single Owner of the Business. <br>
+            #3 Easy to Start and Easy to Close. <br>
+            #4 Complete Control. <br>
+            #5 Lower Cost of Formation and Compliance. <br> <br>
+
+            Learn here more about the Proprietorship Firm Benefits.
+
+        </p>
+
+        <h1>FAQ on Sole Proprietorship Registration ?
+
+        </h1>
+        <strong>#1 Does its required the commercial property or office for the Registration ?
+        </strong>
+        <p>No, you can register on your residential property also, whether its a rented or own property. you need just
+            utility bills copy with permission from your landlord or owner of the premise.
+
+
+        </p>
+
+        <strong>#2 NOC is required in rental or own property case ?
+        </strong>
+        <p>If the bill copy is on another person name then yes No Objection Certificate is required & Standard Format is
+            shared by us on a later stage. </p>
+
+
+        <strong>#3 Can i keep any name of the Firm ?
+        </strong>
+        <p>Yes, you can keep any name of the Firm. its not related to the private limited company or llp or opc etc. you
+            have to keep name without any extension. for ex – myonlineca technologies.
+
+        </p>
+        <strong>#4 Can i register the firm on my family member name ?
+        </strong>
+        <p> Yes, you can register your firm on your family member name if you have any objection. it’s required the same
+            docs which mentioned above. </p>
+
+
+        <strong>#5 There is any other way to register my proprietorship firm apart from above 2 Option ?
+        </strong>
+        <p>Yes, but its an expensive and less validity option. below are options – <br> <br>
+
+            a) Shop Act License – if you are planning to start new shop in India then local municipal party have imposed
+            some rules and regulations like opening hours or employees etc. then shop act licence are applicable but its
+            a very expensive license in some state or location so always avoid this. <br> <br>
+
+            b) Income Tax Return (Business ITR) – Income Tax Return also work as legal entity proof but it’s only for
+            the old traditional business which are running on a personal name or firm name. Because new business can’t
+            file ITR without data.</p>
+        <strong>#6 Sole Proprietorship Firm Registration is Mandatory ?
+        </strong>
+        <p>Basically Proprietorship firm is an unregistered legal entity so Its need only the legal entity proof from
+            the government to deals with the vendor or banks etc. There is no Registration Certificate under the Firm
+            Act. So legal entity proof are registered their respective act for the same.
+
+        </p>
+
+        <strong>#7 What are disadvantage of Proprietorship Firm ?
+        </strong>
+        <p>#1 Lack of Resources. <br>
+            #2 Unlimited Liability. <br>
+            #3 Lack of Credibility. <br>
+            #4 Can not raise funds easily. <br>
+            #5 Can not add Partners.</p>
+        <strong>#8 Can NRI become Proprietor in the Sole Proprietorship Registration ?
+        </strong>
+        <p>No, Sole Proprietorship Registration are not for the NRi ( Non Resident Person). Its required only indian
+            resident person. NRI’s can invest in the proprietorship.
+
+        </p>
+        <strong>#9 How Much Amount of Money Required to Start Proprietorship ?
+        </strong>
+        <p>#9 How Much Amount of Money Required to Start Proprietorship ?
+        </p>
+        <strong>#10 What are the annual Compliance or Maintenance for Proprietorship ?
+        </strong>
+        <p>There are only 2 type of the annual compliance with the sole proprietorship registration –
+            <br>
+            a) GST Returns – if you applied for the GST Registration then you have to file GST Return Filing from time
+            to time based on your business activity. <br> <br>
+
+            b) Income Tax Return – In the Proprietorship Firm there is no separate pan card so you have to file and show
+            your business income in your personal annual return for the same.
+        </p>
+
+
+
+        <h1>Steps for register sole proprietorship firm in india for Startups
+
+        </h1>
+        <strong>A) Tax Registration in India (GST Registration) <br>
+            B) Basic Local or Central Government or other body licenses <br>
+            <br>
+            a) Tax Registration (GST Registration) –
+        </strong>
+        <p>So From 1st July 2017 the government of India imposed the GST on all the business. GST is basically a uniform
+            tax which replaces the various taxes like Service Tax | VAT/CST Registration or TIN Number etc. <br> <br>
+
+            So Ultimately Now whether you are doing service-based business or product based business, you have to
+            required only the GST ( Good and Service Tax) when turnover or sales cross more than 20 lakh rupees in a
+            year or in the northeast state 10 lakh rupees in a year. but in some following cases, you have to require
+            the GST Registration as sole proprietorship firm in the starting :- <br> <br>
+
+            -When you want to deal with inter state and supply goods and services across the state anywhere in India.
+            <br>
+            -When you are doing trading or retail and your other suppliers are registered under the GST. <br>
+            -When you want to start an online ecommerce business or internet related any type of business. <br>
+        </p>
+
+        <strong>Documents Required as a GST for the Firm :-
+
+        </strong>
+        <p>#1 Personal Pan Card Copy <br>
+            #2 Aadhar Card Copy <br>
+            #3 Electricity Bill Copy of Business Location or Premise (Don’t worry if its on another person name) <br>
+            #4 Personal Bank Statement Copy or Cancel Cheque anyone <br>
+            #5 Passport Size Photograph <br>
+
+            Note : if your firm falls under the Option “A” then just click on the below button and Let’s Start your
+            Registration at Low Cost.</p>
+
+
+        <strong>b) Basic Local or Central Government or other Body License – (It’s not a long-term solution)
+
+        </strong>
+        <p>​These type licenses are issued by the central government or state government or any other body on the name
+            of sole proprietorship Firm. Most of the banks required anyone minimum 2 Valid Certification out of 4 in
+            this category which are following –
+        </p> <br>
+
+
+        <strong>Chartered Accountant Certificate –</strong> ICAI (The Institute of Chartered Accountant of India) is a
+        body which is incorporated by the government of India for the chartered <br> accountants. so all the practicing
+        members only of ICAI (i.e is CA) can verify the documents and information of the sole proprietor & issued a CA
+        Certification to open a current <br> bank account on proprietor name. <br>
+        (Note : Some private banks are not accepted the CA Certification so just confirm with your bank) <br> <br>
+
+        <strong>MSME Registration Online Certificate –</strong> MSME (Micro small and medium enterprise) is a government
+        body which is incorporated for the formation of rules & regulations for <br> small business in India so they can
+        issue a registration certificate on the name of proprietorship firm. <br>
+        (Note : Some private banks are not accepted the MSME Certificate so just confirm with your bank) <br> <br>
+
+
+        <strong>Income Tax Return (Business ITR) –</strong> Every person which are living and earn in India, they have
+        to pay the income tax yearly basis. so if you are earning from your business as <br> freelancer then you can
+        file
+        your ITR on the business name as proprietorship firm status. <br> <br>
+
+        <strong>Shop Act License –</strong> Every state or regional city or area have a municipal party to control on
+        the local business which is incorporated by the respective state government. so they <br> can issue also a shop
+        act
+        licence on the physical shop name as proprietorship firm status. <br> 
+
+
+        <p>So all the proprietorship firm owner’s which is just starting the new business within the state,they can go
+            with the anyone above 2 legal valid certifications. We highly recommend to you go with the <strong> CA
+                Certification
+                and MSME Registration Certificate</strong> or CA+ Income Tax Return which is issued by the government &
+            you can run
+            your business anywhere in India.</p>
+            
+            </body>
+
+            <script>
+                function scrollToSection() {
+            const section = document.getElementById('book1');
+            section.scrollIntoView({ behavior: 'smooth' });}
+            </script>
+            </html>

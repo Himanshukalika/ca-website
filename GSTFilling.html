@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui;
+
+        }
+
+
+        .main-center {
+            height: 550px;
+            width: 100%;
+            background: #e7717d;
+
+        }
+
+        .ICT {
+
+            background: #e7717d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+
+        .ICT p {
+
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-top: 200px;
+
+
+        }
+
+        .ICT .p2 {
+            font-size: 20px;
+            position: relative;
+            margin-top: 25px;
+        }
+
+        .ICT-btn {
+            position: relative;
+            margin-top: 45px;
+            margin-left: 550px;
+            width: 234px;
+            height: 55px;
+            font-size: 22px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-weight: 700;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+
+        }
+
+        .ICT-btn:hover {
+            background-color: #6747c7;
+        }
+
+        .form-main {
+            font-size: 35px;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+        }
+
+        .form-box {
+            height: 1000px;
+            width: 90%;
+            background-color: #f0f4ff;
+            margin: 20px 5% 0px 5%;
+        }
+
+        .form-ITF {
+            width: 700px;
+            height: 770px;
+            background-color: white;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            margin-left: 260px;
+            top: 70px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-header {
+            height: 140px;
+            width: 700px;
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid black;
+
+        }
+
+        .form-header h2 {
+
+            font-size: 32px;
+            width: 662px;
+            height: 47px;
+            position: relative;
+            left: 150px;
+            white-space: nowrap;
+        }
+
+        .form-header p {
+            font-size: 16px;
+            width: 662px;
+            height: 26px;
+            color: #57647E;
+            margin-top: 50px;
+            white-space: nowrap;
+            position: relative;
+            left: -250px;
+            margin-top: 80px;
+
+        }
+
+        .form-details {
+            width: 662px;
+            height: 300px;
+            position: relative;
+            top: 200px;
+            right: 450px;
+            white-space: nowrap;
+            font-size: 15px;
+            margin-top: 15px;
+            line-height: 30px;
+
+        }
+
+        button {
+            position: relative;
+            bottom: 50px;
+            left: 550px;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        form {
+            position: absolute;
+            top: 220px;
+        }
+
+
+        .form-group {
+            margin-bottom: 42px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+            accent-color: blue;
+            /* Modern browsers support */
+        }
+
+        .form-group label,
+        .form-group input[type="radio"] {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        input[type="radio"]+label {
+            margin-right: 15px;
+            /* Adds space between radio buttons and labels */
+        }
+
+
+        .GST-Reg {
+            position: relative;
+            top: 170px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .GST-Reg p {
+            margin-top: 20px;
+        }
+
+        .GST-Reg h1 {
+            margin-top: 20px;
+        }
+
+        .Filing-fee {
+            width: 1400px;
+            height: 400px;
+            background-color: #e7717d;
+            margin-top: 50px;
+            position: relative;
+            top: 200px;
+            white-space: nowrap;
+        }
+
+        .list-container {
+            padding: 20px;
+            margin-left: 50px;
+            list-style-type: disc;
+            line-height: 2;
+            color: white;
+        }
+
+
+        .return {
+            font-size: 35px;
+            margin: 0px 0px 0px 30px;
+            padding: 50px 0px 20px;
+            color: white;
+            border-bottom: 2px solid white;
+            width: 550px;
+        }
+
+        .book-btn {
+            width: 150px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            margin: 20px 0px 0px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            cursor: pointer;
+
+        }
+
+        .GST-Fea {
+            margin-top: 50px;
+            margin-left: 100px;
+            white-space: wrap;
+        }
+
+        .GST-Fea p {
+            margin-right: 70px;
+            margin-top: 10px;
+            white-space: wrap;
+
+        }
+
+        .GST-Fea h1 {
+            margin-top: 20px;
+        }
+
+        strong {
+            white-space: wrap;
+            line-height: 2;
+        }
+    </style>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">
+                <div class="logo">MY Wealth</div> 
+               </a>
+            <ul class="nav-links">
+                <li><a href="ITF.html">Income Tax Filling</a></li>
+                <li><a href="Consultancy.html">Book Consultancy</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Popular Services &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="ITF.html">ITR Filing Services</a>
+                        <a href="ISO.html">ISO Certification</a>
+                        <a href="GSTReg.html">GST Registration</a>
+                        <a href="GSTFilling.html">GST Return Filing</a>
+                        <a href="MSME.html">MSME Registration</a>
+                        <a href="companyreg.html">Company Registration</a>
+                        <a href="firm.html">Firm Registration</a>
+                        <a href="fssai.html">FSSAI License</a>
+                        <a href="trademark.html">Trademark Registration</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Bussiness Registration &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="companyreg.html">Company Registration</a>
+                        <a href="firm.html">Firm Registration</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">GST Services &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="GSTReg.html">GST Registration</a>
+                        <a href="GSTFilling.html">GST Return Filing</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Support &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="#">Contact Us</a>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+    </header>
+
+    <div class="main-center">
+        <div class="ICT">
+            <p>Gst Return Filing Online</p>
+            <p class="p2">#1 Portal to get done gst return filing at cheapest cost with simple 3 steps
+                ​Package Start From Just Only 499/- Per Month</p>
+
+            <div class="ICT-btn" onclick="scrollToSection()">
+                GET PROPOSAL &#9654
+            </div>
+
+        </div>
+    </div>
+
+    <div id="book1" class="form-main">
+        📅 Book Your Consultation Right Now
+    </div>
+
+    <div class="form-box">
+        <div class="form-ITF">
+            <div class="form-header">
+                <h2>GST Return Filing Online</h2>
+                <p>
+                    100% Govt Certified with Registered 30k+ GSTIN </p>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label for="name">Name <span style="color: red;">*</span></label><br>
+                    <input type="text" id="name" name="name" placeholder="Type your Good Name">
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="email">Email <span style="color: red;">*</span></label><br>
+                    <input type="email" id="email" name="email"
+                        placeholder="Insert Valid Email id for Instant Proposal">
+                </div>
+
+                <!-- Contact Number Field -->
+                <div class="form-group">
+                    <label for="contact">Contact Number <span style="color: red;">*</span></label><br>
+                    <input type="text" id="contact" name="contact"
+                        placeholder="Insert Indian No without +91 or 0 (10 Digit Only)">
+                </div>
+
+                <!-- WhatsApp Question -->
+                <div class="form-group">
+                    <label for="whatsapp">Are you on WhatsApp? <span style="color: red;">*</span></label><br>
+                    <input type="radio" id="yes" name="whatsapp" value="yes">
+                    <label for="yes">Yes</label><br>
+                    <input type="radio" id="no" name="whatsapp" value="no">
+                    <label for="no">No</label>
+                </div>
+
+                <!-- Type of Return -->
+                <div class="form-group">
+                    <label for="typeOfReturn">Type of Return <span style="color: red;">*</span></label><br>
+                    <input type="radio" id="nil" name="typeOfReturn" value="nil">
+                    <label for="nil">Nil Transactions</label><br>
+                    <input type="radio" id="taxable" name="typeOfReturn" value="taxable">
+                    <label for="taxable">Taxable Transactions</label>
+                </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+        <button type="submit">Submit</button>
+        </form>
+
+
+
+    </div>
+    </div>
+
+    </div>
+
+    <div class="GST-Reg">
+        <h1>What is GST Return Filing ? </h1>
+        <p>Every person who is applying for the GST Registration has to file GST return Filing. GST Return is mandatory
+            for each person whose enroll under the GST Registration.There is a lot of the type of the GST Returns which
+            you have to file the monthly basis with one annual return. A registered personal have to file the returns
+            about the following things –</p>
+        <p>#1 Total Sales of the Month<br>
+            #2 Total Output GST Tax<br>
+            #3 Total Purchase of the Month<br>
+            #4 Total Input GST Credit Tax<br><br>
+
+            if you are registered under the GST Composition Scheme then there are the different rules for the same.<br>
+        </p>
+
+
+
+
+
+
+    </div>
+
+
+
+    <div class="Filing-fee">
+        <div class="return">
+            GST Return Filing Fee
+
+
+        </div>
+        <p style="margin-left: 50px; color: white;">Pricing : 499/- INR Per Month<br>
+            Include :<br>
+            #1 Collection of the Data and Preparation of the Tax Data in Govt Format<br>
+            #2 GSTR3B Return Filing by CA<br>
+            #3 GSTR1 Return Filing by CA<br>
+            #4 GST Tax Consultancy by CA<br>
+            *Avail 3 Month GST Return Filing Package<br></p>
+
+
+
+
+
+
+        <div class="book-btn" onclick="scrollToSection()">
+            BOOK NOW
+        </div>
+
+
+        <br>
+        <script>document.body.style.overflowX = 'hidden';</script>
+
+        <div class="GST-Fea">
+            <h1>GST Return Date : GST Return Filing Date </h1>
+            <p>Now let’s understand about the GST Return Filing Date. Basically, there are 3 type of the filing date –
+            </p><br>
+
+            <strong>a) GSTR 3B – </strong> This is the mainly a GSTR Return filing summary where you have to provide the
+            data of the sales and purchase for the same & make the tax payment. The due date depends on the aggregate
+            turnover of the company. there are the 2 criteria for the same –<br>
+
+            <strong>#1 If your firm or business turnover is less than 1.5 Cr in a year</strong>
+            <p>In this case GSTR3B always be filed on each month of 20th.<br>
+                For ex – In the June 2018 month due date is 20th July 2018.</p>
+            <strong>#2 if your business aggregator turnover is more than 1.5 Cr in a year</strong>
+            <p>In this case GSTR3B always be filed on each month of 20th as mentioned above.</p>
+
+            <strong>b) GSTR 1 – </strong>This is also called the sales returns for the same because you have to provide
+            your all the sales details in this return. you have to mention each dealer B2B details with their GSTIN
+            Number. so in this return, all the outward supplier details are mentioned.<br><br>
+
+            The due date for the GSTR 1 always should be the quarterly basis when your aggregator turnover is less than
+            1.5 Cr.<br>
+
+            <strong>GSTR1 due date –</strong>
+
+            <p>For-ex – April to June 2018 – Due date will be 31st July 2018<br><br>
+
+                if your aggregator turnover is more than 1.5 Cr then you have to file the monthly basis.<br><br>
+
+                For ex -June 18 Month – You have to file in the July 2018 before the 10th.</p>
+
+            <strong>c) GSTR 2 – </strong> It’s an auto-populate return where all the input tax credit details have been
+            mentioned. All the purchase details also has been mentioned into the GSTR 2. Still, GSTR 2 not practically
+            to file so you have to wait for the same.
+
+
+            <h1>How to File GST Return </h1>
+            <p>GST Return Filing is an online procedure; if you have the GST Software, then it will be easy for you to
+                file GST Return. Even GST Portal issued an offline excel utility which is very easy to file the GST
+                Returns. but you need the knowledge about the returns for the same.<br></p>
+
+            <p>So below are the simplified steps to file your GSTR Returns –<br>
+                #1 Login with your user id and password on the GST Portal for gst e filing.<br>
+                #2 Just proceed with the GSTR-3B Return tab and insert your sales amount with the tax & purchase amount
+                with the input credit.<br><br>
+                #3 Just make the payment of the GST by creating the challan & submit the gst e filing.<br><br>
+
+                Note – In the GSTR 1 you have to upload each invoice details for the same.
+            </p>
+
+
+            <h1>GST Return Filing Procedure
+
+            </h1>
+
+            <p>We at MyOnlineCA build a simplified excel sheet where you have to just maintain your invoice records
+                basic details, at the end of the month you can file your returns through our GST Experts assistance
+                plan.</p><br>
+            <p>There are main overall three steps in gst return filing procedure:</p><br>
+
+
+            <strong>1. Download the MyOnlineCA Simplified Excel Template</strong><br>
+            <p>Every registered person has to upload the invoice on GST portal so for that you have to required to
+                maintain the invoice records electronically. We build a simplified excel template where you can maintain
+                your invoice records easily.</p><br>
+
+
+            <strong>2. Email to MyOnlineCA GST Experts </strong><br>
+            <p>Once you prepare your data then you can email to MyOnlineCA GST Experts which review your all the data
+                entries and prepare GSTR1,2 and 3 & maintain your gst compliance at your fingertips</p><br>
+
+            <strong>​3. Fiilng of the GSTR1,2 and 3 or GSTR3B </strong><br>
+            <p>once your data has been finalized then our GST Expert file your GSTR Returns with the proper challan &
+                generated the ARN Number for the same.</p><br>
+
+
+
+
+
+            <h1>All about GST Software
+            </h1>
+            <p>There are lot of the good GST Software in the market which cost from 5000 to 10000 or more per annum but
+                it’s expensive for the small business whose don’t have knowledge about the GST Returns and Accounts.
+                Even Small business have to hire the accountant for the data entry. Instead of the expensive software,
+                you can use myonlineca gst assistant plan where you have to maintain your records in simplified excel
+                sheet and file the returns</p>
+
+            <h1>Gst Payment Due Date
+            </h1>
+            <p>​You can make the payment of the GST via online net banking or NEFT Transfer or Echallan for the same in
+                the banks. You have to just generate the challan through your dashboard then you can make the GST
+                Payment.</p><br>
+            <p>So you have to require an online internet banking account for the GST Payments. if we talk about the GST
+                Payment Due dates. then during the filing of the GSTR3B you have to make the payment in advance on a
+                monthly basis.</p>
+
+
+            <h1>Documents Required for the GST Return Filing
+            </h1>
+            <p>GST Return filing have no proper set of the documents. Its required the mainly the sales invoice of
+                taxable services or goods. So for the GST Return filing you have to follow some standard guidelines –
+            </p><br>
+            <p>a) Prepare each invoice as per the GST Law. <br>
+                b) Maintain records online or offline as bookkeeping. <br>
+                c) Try to maintain records in your GST Filing software or else use our simplified excel sheets.</p>
+
+
+            <h1>Type of GST Return Forms
+            </h1>
+            <p>
+                ​GSTR-1 – Details of all outward supplies of taxable goods and services to be filed by registered
+                taxable supplier. The due date to file this form is 10th of the next month. <br><br>
+
+                GSTR-2 – Details of all inward supplies of taxable goods andservices to be filed by registered taxable
+                recipient of the goods and services. The due date of filing this form is 15th of next month. <br><br>
+
+                GSTR-3 –This form will be filled automatically on the basis of outward supplies and inward supplies with
+                the payment of tax furnished in GSTR-1 and 2. The form will be prepared by 20th of the next month.
+                <br><br>
+
+                GSTR-4 –This form contain the details of outward supplies, tax payable and payment of tax. The due date
+                of filing this form is 18th of the month succeeding quarter. <br><br>
+
+                GSTR-5 –This form contain the details of outward supplies, imports, input tax, tax paid and reaming
+                stock. The form has to be filed by non-resident taxable person by 20th of the next month. <br><br>
+
+                GSTR-6 –This form contains the details of return for input service distributorand it is filed by input
+                service distributor by 13th of the next month. <br><br>
+
+                GSTR-7 –This form contains the details of the tax deduction. Due date to file this form is 10th of the
+                next month. <br><br>
+
+                GSTR-8 –This form contain the details of all supplies made through e-commerce operator and the amount of
+                tax collected. The GSTR-8 form will be filed by e-commerce operator or tax collector by 10th of every
+                month. <br><br>
+
+                ​GSTR-9 – Annual return filed by registered taxable person by 31st December of next financial year.
+                <br><br>
+
+                GSTR-10 – Final return filed by taxable person whose registration has been surrendered or cancelled
+                within three months of the date of cancellation or surrender whichever is later. <br><br>
+
+                ​GSTR-11 – Details of inward supplies to be furnished by a person who have Unique Identification Number
+                (UIN) by 28th of the month following the month for which statement is filed. <br><br>
+
+                GSTR-3B – Details of taxable supply of the goods and services in the month of July and Aug 2017.Do note
+                that you do not have to provide invoice level information in this form. Only total values for each field
+                have to be provided.
+
+
+
+
+            </p>
+
+            <h1>Important Current gst return filing dates
+            </h1>
+
+            <p>
+                GSTR-3B (Jun 2018) <br>
+                Jul 20th, 2018 <br><br>
+
+                GSTR-5 (Jun 2018) <br>
+                Jul 20th, 2018 <br><br>
+
+                GSTR-6 (Jul’17 – Jun’18) <br>
+                Jul 31st, 2018 <br><br>
+
+                GSTR-4 (Apr-Jun, 2018) <br>
+                Jul 18th, 2018 <br>
+
+                GSTR-5A (Jun 2018) <br>
+                Jul 20th, 2018 <br><br>
+
+                GST TRAN-2 <br>
+                Jun 30th, 2018 <br><br>
+
+                RFD-10 <br>
+                Eighteen months after end of the quarter for which refund is to be claimed <br><br>
+
+                Quarterly return for registered persons with aggregate turnover up to Rs. 1.50 Crores <br><br>
+
+                GSTR-1 (Apr-Jun, 2018) <br>
+                Jul 31st, 2018 <br><br>
+<br>
+                Turnover exceeding Rs. 1.5 Crores or opted to file monthly Return <br><br>
+                GSTR-1 (Jun 2018) <br>
+                Jul 10th, 2018 <br>
+                GSTR-1 (May 2018) <br>
+                Jun 10th, 2018 <br>
+            </p>
+        </div>
+
+
+</body>
+  <script>
+      function scrollToSection() {
+            const section = document.getElementById('book1');
+            section.scrollIntoView({ behavior: 'smooth' });}
+  </script>
+</html> 

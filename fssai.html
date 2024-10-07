@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui;
+
+        }
+
+
+        .main-center {
+            height: 550px;
+            width: 100%;
+            background: #e7717d;
+
+        }
+
+        .ICT {
+
+            background: #e7717d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+
+        .ICT p {
+
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-top: 200px;
+
+
+        }
+
+        .ICT .p2 {
+            font-size: 20px;
+            position: relative;
+            margin-top: 25px;
+        }
+
+        .ICT-btn {
+            position: relative;
+            margin-top: 45px;
+            margin-left: 550px;
+            width: 234px;
+            height: 55px;
+            font-size: 22px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-weight: 700;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+
+        }
+
+        .ICT-btn:hover {
+            background-color: #6747c7;
+        }
+
+        .form-main {
+            font-size: 35px;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+        }
+
+        .form-box {
+            height: 1200px;
+            width: 90%;
+            background-color: #f0f4ff;
+            margin: 20px 5% 0px 5%;
+        }
+
+        .form-ITF {
+            width: 700px;
+            height: 1000px;
+            background-color: white;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            margin-left: 260px;
+            top: 70px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-header {
+            height: 140px;
+            width: 700px;
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid black;
+
+        }
+
+        .form-header h2 {
+
+            font-size: 32px;
+            width: 662px;
+            height: 47px;
+            position: relative;
+            left: 150px;
+            white-space: nowrap;
+        }
+
+        .form-header p {
+            font-size: 16px;
+            width: 662px;
+            height: 26px;
+            color: #57647E;
+            margin-top: 50px;
+            white-space: nowrap;
+            position: relative;
+            left: -250px;
+            margin-top: 80px;
+
+        }
+
+        .form-details {
+            width: 662px;
+            height: 300px;
+            position: relative;
+            top: 200px;
+            right: 450px;
+            white-space: nowrap;
+            font-size: 15px;
+            margin-top: 15px;
+            line-height: 30px;
+
+        }
+
+        form {
+            position: absolute;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            position: relative;
+            left: 120px;
+            top: 190px;
+            white-space: nowrap;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+            margin-bottom: 50px;
+            margin-left: 100px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 33%;
+            box-sizing: border-box;
+            position: relative;
+            margin-top: 30px;
+        }
+
+        .tooltip {
+            position: absolute;
+            top: -35px;
+            left: 5px;
+            background-color: #2c3e50;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+            display: none;
+        }
+
+        .form-group:hover .tooltip {
+            display: block;
+        }
+
+        small {
+            display: block;
+            margin-top: 39px;
+            color: #777;
+
+            position: relative;
+            right: 139px;
+        }
+
+
+        .radio-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .radio-group label {
+            margin-right: 10px;
+            margin-left: 5px;
+        }
+
+        button {
+            position: relative;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100px;
+            top: 260px;
+            right: 790px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 300px;
+            height: 100px;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: none;
+            position: relative;
+            right: 695px;
+            bottom: 100px;
+        }
+
+        .GST-Reg {
+            position: relative;
+            top: 210px;
+        }
+
+        .GST-Reg p {
+            margin-top: 20px;
+        }
+
+        .GST-Reg h1 {
+            margin-top: 20px;
+        }
+
+        .Filing-fee {
+            width: 1400px;
+            height: 400px;
+            background-color: #e7717d;
+            margin-top: 50px;
+            position: relative;
+            top: 50px;
+
+            white-space: nowrap;
+        }
+
+        .list-container {
+            padding: 20px;
+            margin-left: 50px;
+            list-style-type: disc;
+            line-height: 2;
+            color: white;
+        }
+
+
+        .return {
+            font-size: 35px;
+            margin: 0px 0px 0px 30px;
+            padding: 50px 0px 20px;
+            color: white;
+            border-bottom: 2px solid white;
+            width: 550px;
+        }
+
+        .book-btn {
+            width: 150px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            margin: 20px 0px 0px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            cursor: pointer;
+
+        }
+
+        .GST-Fea {
+            margin-top: 50px;
+
+            position: relative;
+            top: 250px;
+        }
+
+        .GST-Fea p {
+            margin-right: 70px;
+            margin-top: 10px;
+            white-space: wrap;
+            line-height: 2;
+
+        }
+
+        .GST-Fea h1 {
+            margin-top: 20px;
+        }
+
+        strong {
+            white-space: wrap;
+            line-height: 2;
+            margin-top: 50px;
+        }
+    </style>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">
+                <div class="logo">MY Wealth</div> 
+               </a>
+            <ul class="nav-links">
+                <li><a href="ITF.html">Income Tax Filling</a></li>
+                <li><a href="Consultancy.html">Book Consultancy</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Popular Services &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="ITF.html">ITR Filing Services</a>
+                        <a href="ISO.html">ISO Certification</a>
+                        <a href="GSTReg.html">GST Registration</a>
+                        <a href="GSTFilling.html">GST Return Filing</a>
+                        <a href="MSME.html">MSME Registration</a>
+                        <a href="companyreg.html">Company Registration</a>
+                        <a href="firm.html">Firm Registration</a>
+                        <a href="fssai.html">FSSAI License</a>
+                        <a href="trademark.html">Trademark Registration</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Bussiness Registration &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="companyreg.html">Company Registration</a>
+                        <a href="firm.html">Firm Registration</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">GST Services &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="GSTReg.html">GST Registration</a>
+                        <a href="GSTFilling.html">GST Return Filing</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Support &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="#">Contact Us</a>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+    </header>
+
+    <div class="main-center">
+        <div class="ICT">
+            <p>Trademark Registration Online
+
+
+            </p>
+            <p class="p2"> India’s Only Govt Certified Portal to get done Trademark Registration Online <br>
+                Package Start From Just 6800/- INR (All Inclusive) </p>
+            <div class="ICT-btn" onclick="scrollToSection()">
+                GET PROPOSAL &#9654
+            </div>
+
+        </div>
+    </div>
+
+
+    <h1 style="margin: 20px 0px 0px 30px;">What is Trademark Registration ?
+
+
+
+    </h1>
+    <p style="margin-left: 30px; margin-right: 30px;">Trademark is very Important for any business or brand in India.
+        Each any type of the business who’s want to secure their brand name and logo of the company, they have to must
+        go for trademark registration in India. Trademark Registry gives the protection on each brand name with the logo
+        in their respective trademark class. <br> <br>
+
+        There are 45 Trademark classes where you can register your brand name in the type of the field which is related
+        to your business or where you want to protect the brand or trade name. Remember if you want to protect your
+        design or idea or product or service then you can go with Patent Registration or if you want to protect your
+        design then you can go with the Copyright Registration.​
+
+
+
+    </p>
+
+    <h1 style="margin: 20px 0px 0px 30px;">Why is Trademark Registration Required for Business ?
+
+
+    </h1>
+    <p style="margin-left: 30px;">There are a lot of the benefits and reason to register your brand name with the logo
+        as a trademark in India which are the following :- <br><br> 
+
+       - Secure your brand or company name so anyone (competitors) can’t use a similar brand name. <br>
+       - Give protection on the brand name so other companies can’t use your brand name without your permission. <br>
+       - It helps you to protect your existing customer by showing a fake similar brand name. <br>
+       - If you are internet based startup then it gives you protection on the Domain Name like www.xyz.com etc. <br>
+       - If you are selling the products on the e-commerce website such as Flipkart or Amazon or paytm etc then it gives 
+        you different identity between other sellers.
+       - Its help you to register a private limited company with the same brand name.
+
+    </p>
+
+
+
+    <div class="Filing-fee">
+        <div class="return">
+            FSSAI Basic Registration Package Just at 1999/- INR
+
+
+
+
+        </div>
+        <p
+            style="color: white; white-space: wrap; margin-left: 40px;margin-right: 100px; margin-top: 20px; line-height: 2;">
+            #1 FSSAI Application Drafting <br>
+            #2 Government and Professional Fee <br>
+            #3 FSSAI Basic License Registration up to 12 Lakh Rupees Turnover Entity <br>
+            #4 FSSAI Registration Certificate with FSSAI Number <br>
+            #5 10+ Premium Legal Agreements
+        <div class="book-btn" onclick="scrollToSection()">
+            BOOK NOW
+        </div>
+
+
+
+        <div id="book1" class="form-main">
+            📅 Book Free Consultation Right Now
+
+
+        </div>
+
+        <div class="form-box">
+            <div class="form-ITF">
+                <div class="form-header">
+                    <h2>FSSAI Registration</h2>
+                    <p>
+                        Simply Fill-Up Below Details and Get Started</p>
+                </div>
+
+                <form>
+                    <div class="form-group">
+                        <label for="name" style="position: relative; left: 185px;">Name<span> * <style {color:red}>
+                                </style>
+                        </label> <br>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        <small></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" style="position: relative; left: 185px;">Email<span> * <style {color:red}>
+                                </style></label>
+                        <input type="email" id="email" name="email" placeholder="Enter valid email-ID" required>
+                        <div class="tooltip">Your Email Please where you need the proposal</div>
+                        <small></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact" style="position: relative; left: 185px;">Contact Number<span> * <style
+                                    {color:red}>
+                                </style></span></label>
+                        <input type="text" id="contact" name="contact" placeholder="Enter your MOB Number" required>
+                        <br>
+                        <small></small>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="form-group">
+                        <label for="social-category" class="dropdown-label"
+                            style="position: relative; left: 185px; top: 10px;">Type of License<span
+                                class="required">*</span></label>
+                        <select id="social-category" name="social-category" class="dropdown"
+                            style="width: 300px; height: 40px; position: relative; left: 150px;">
+                            <option value="general">Turnover Up to 12 lakh</option>
+                            <option value="general"> 12 lakh to 20 Crore
+                            </option>
+                            <option value="general">20 Crore or More</option>
+
+                        </select>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label style="position: relative; left: 185px;">Are you on WhatsApp? <span> * <style
+                                    {color:red}>
+                                </style></label>
+                        <div class="radio-group">
+                            <input type="radio" id="yes" name="whatsapp" value="yes">
+                            <label for="yes">Yes</label>
+                            <input type="radio" id="no" name="whatsapp" value="no">
+                            <label for="no">No</label>
+
+
+
+
+
+
+                            <div class="form-group">
+                                <label for="requirements"
+                                    style="position: relative; right: 635px; bottom: 100px; font-size: 16px;">About your
+                                    <br> Business
+                                    <span> * <style {color:red}></style></label>
+                                <textarea id="requirements" placeholder="Let us know your nature of business
+                                    "></textarea>
+
+
+
+
+                            </div>
+
+
+                            <button type="submit">Submit</button>
+                </form>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>document.body.style.overflowX = 'hidden';</script>
+
+    <div class="GST-Fea">
+
+
+        <h1>Who Required FSSAI Registration | FSSAI License?
+
+
+
+        </h1>
+        <p>FSSAI Registration or Food License is required for all type of the food related business. Even if you are
+            thinking to starting a food related business by way of food processing or manufacturing or distributor then
+            its required from starting irrespective of the turnover. <br>
+            Its helps you in following way – <br>
+            a) Increase your customer confidence in terms of safety <br>
+            b) ​Helps in removal of multiple legal regulations. <br>
+            c) Helps in promote innovative products. </p>
+
+        <h1>Type of FSSAI Registration | License
+        </h1>
+        <p>Basically for all the small food related business required legal registration to starting a business in
+            India. In this legal registration business incorporation entity like private limited company or
+            proprietorship firm etc are included. Apart from this you need other license like Food License or GST
+            Registration etc. so Food License and FSSAI License are the same. <br>
+            There are mainly 3 type of the Food License or FSSAI License category which is required by each food related
+            business. <br></p>
+
+        <strong>​a) FSSAI Basic Registration – </strong> FSSAI Basic Registration is required by the small business
+        which have turnover less than 12 lakh rupees in a year. So if you are just starting your <br>business then its
+        required only the basic FSSAI or Food License Registration. Turnover is calculated on the yearly basis. <br>
+
+
+        <strong>b) FSSAI State License Registration -</strong>If you have already the FSSAI Basic Registration and cross
+        the turnover of the 12 lakh rupees in a year but less than 20 Cr. rupees then its <br> required the FSSAI State
+        License Registration. <br>
+
+        <strong>c) FSSAI Central License Registration -</strong> If you are starting import export business or want to
+        supply at the government various department then its required the FSSAI Central <br> License Registration.even
+        it’s
+        also required for the large scale turnover more than 20 Cr. in a year companies.
+
+
+
+
+        <h1>What is food and safety Department or Registration
+
+        </h1>
+        <p>Food and Safety Department is related to the FSSAI Department. Food and Safety department works to farming
+            rules regarding the food related articles and implementation of the policies. It’s also provide the
+            scientific and technical support to the central govt regarding the food related articles. Its act as
+            collection of the food related data consumption with general awareness about the Food Safety and Food
+            Standards.
+
+        </p>
+
+        <h1>Documents Required for the FSSAI Registration | Food License
+
+        </h1>
+        <p>FSSAI Registration is required the documents depend on the type of the legal entity and type of the Food
+            License or FSSAI Registration. <br>
+            Following are the documents required for FSSAI registration</p>
+
+        <strong>Personal information of the FSSAI Application Applicant –</strong>
+        <p>#1 PAN Card: Copy of PAN is mandatory identity proof. <br>
+            #2 Copy of Aadhaar Card/ Voter identity card/ Driving License/Passport (Either of the Four) <br>
+            #3 Passport size Photo</p>
+
+        <strong>Documents for Registered office from where the food business is being operated</strong>
+        <p>#1 The latest Utility Bill( Electricity / Water Bill) <br>
+            #2 Copy of Rent Agreement( if Rented property) <br>
+            #3 Copy of property paper (if owned property) <br> <br>
+
+            Note – It’s can be a residential property, there is no issue in that but above documentation are required
+            for the same. <br>
+            In addition to the above following documents are also required for Basic FSSAI Registration: <br> <br>
+
+            #1 Form-A must be appropriated completely and signed by all directors/ partners/ proprietor /Executive
+            member of society <br>
+            #2 Declaration regarding food safety management system(FSMS) on the letterhead of the firm or company <br>
+            #3 Proof of Income determining the annual turnover of food business operator <br>
+            #4 Nomination of the person appointed by the company in Form No.IX and the copy of Board Resolution
+            #5 Self Declaration by Director <br>
+            #6 Affidavit on Non-Judicial Stamp paper <br> <br>
+
+            In addition to the above following documents are also required for State or Central FSSAI License : <br>
+            #1 Duly filled Form – B must be correctly and appropriately completed and signed by the directors/ partners/
+            proprietor/ Executive member of society <br>
+            #2 List of Partners/Proprietor/Executive Members of Society with complete address and contact details. <br>
+            #3 Blueprint plan/layout plan of the processing unit installed capacity and horsepower used. <br>
+            #4 Constitution of company MOA and AOA / Partnership Deed <br>
+            #5 Analysis report as per the nature and business activity of the company <br>
+            #6 Food and safety management system and certificate <br>
+            #7 Declaration regarding food safety management system(FSMS) on the letterhead of the firm or company <br>
+            #8 Proof of Income determining the annual turnover of food business operator <br>
+            #9 Nomination of the person appointed by the company in Form No.IX and the copy of Board Resolution <br>
+            #10 Self Declaration by Director <br>
+            #11 NOC from the local authority <br>
+            #12 Affidavit on Non-Judicial Stamp paper
+            #13 List of food category desired to be manufactured <br>
+            #14 Production unit Photograph <br>
+            #15 Any other documents which may be a demand by authority on the basis of the requirement of the business.
+            <br> <br>
+
+            If you want to know more about the documents required for FSSAI Registration then you can checkout here.
+        </p>
+
+        <h1>What is FSSAI Registration Fee or Cost?
+
+        </h1>
+        <p>FSSAI Registration Fee is divided into the government fee and professional fee. Government fee officially
+            charged by the govt for the application processing fee and professional fee is charged by the
+            CA/Lawyer/Professional to prepare your application. <br>
+            Below are the fee structure – <br>
+            a) FSSAI Registration – 100/- Per Year br <br>
+            b) FSSAI State License – 2000/- 5000/- Per Year br <br>
+            c) FSSAI Central License – 7500/- Per Year br <br>
+            you can read here more about FSSAI Registration Fees</p>
+
+        <h1>FSSAI Registration Form
+
+        </h1>
+        <p>FSSAI Registration or Food License have mainly 2 type of the forms i.e is Form A & Form B. <br> <br>
+
+            Below are the details about the both Forms –</p>
+        <strong>Form A For basic FSSAI Registration –</strong> Form A is basic fssai registration form fillup by the
+        food business operator. Its Comprises of an FBOs Business activities. <br>
+        <strong>Form B for State FSSAI Registration – </strong> Form B is required for the State Food License
+        Registration. It’s a mandatory form with the required above documents for the state license <br> registration.
+
+
+        <h1>How to Apply for FSSAI Registration?
+        </h1>
+        <p>FSSAI Registration can be apply online but its always required the professional to submit your application.
+            So here is the simplified process for FSSAI Application – <br>
+            ​
+            #1 You have to submit above customize FSSAI form with the necessary details & make the payment of the
+            application via debit card/credit card/net banking. <br>
+            #2 Once you make the payment, you will get the confirmation via sms & email with the documents checklist.
+            #3 You have to send us the documents via email as scanned copies. <br>
+            #4 Be Relax ! Your Work is done and our professional will submit your application with the government in
+            professional way and will delivered to you the certificate.</p>
+
+        <h1>Validity of FSSAI License
+        </h1>
+        <p>FSSAI License is issued by the department for 1-2 year for the same. After that there is renewal process of
+            FSSAI License. if you want to check validity or authority of FSSAI License then you can checkout here about
+            How to Check FSSAI License Number Online.
+
+        </p>
+        <h1>Important Guidelines for the Food License Registration
+        </h1>
+        <p>If any food operator is operating in more than 10 state then its required the central registration for the
+            registered office. <br>
+            If Importers or exporters apply for the FSSAI Registration then they need IEC Code before the Food License &
+            have to apply on the same address. <br>
+            The brand owner have to display the FASSI Logo and license number on the food package.</p>
+        </body>
+
+        <script>
+               function scrollToSection() {
+            const section = document.getElementById('book1');
+            section.scrollIntoView({ behavior: 'smooth' });}
+        </script>
+        </html>

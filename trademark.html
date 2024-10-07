@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui;
+
+        }
+
+
+        .main-center {
+            height: 550px;
+            width: 100%;
+            background: #e7717d;
+
+        }
+
+        .ICT {
+
+            background: #e7717d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+
+        .ICT p {
+
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-top: 200px;
+
+
+        }
+
+        .ICT .p2 {
+            font-size: 20px;
+            position: relative;
+            margin-top: 25px;
+        }
+
+        .ICT-btn {
+            position: relative;
+            margin-top: 45px;
+            margin-left: 550px;
+            width: 234px;
+            height: 55px;
+            font-size: 22px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-weight: 700;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+
+        }
+
+        .ICT-btn:hover {
+            background-color: #6747c7;
+        }
+
+        .form-main {
+            font-size: 35px;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+        }
+
+        .form-box {
+            height: 1200px;
+            width: 90%;
+            background-color: #f0f4ff;
+            margin: 20px 5% 0px 5%;
+        }
+
+        .form-ITF {
+            width: 700px;
+            height: 1000px;
+            background-color: white;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            margin-left: 260px;
+            top: 70px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-header {
+            height: 140px;
+            width: 700px;
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid black;
+
+        }
+
+        .form-header h2 {
+
+            font-size: 32px;
+            width: 662px;
+            height: 47px;
+            position: relative;
+            left: 150px;
+            white-space: nowrap;
+        }
+
+        .form-header p {
+            font-size: 16px;
+            width: 662px;
+            height: 26px;
+            color: #57647E;
+            margin-top: 50px;
+            white-space: nowrap;
+            position: relative;
+            left: -250px;
+            margin-top: 80px;
+
+        }
+
+        .form-details {
+            width: 662px;
+            height: 300px;
+            position: relative;
+            top: 200px;
+            right: 450px;
+            white-space: nowrap;
+            font-size: 15px;
+            margin-top: 15px;
+            line-height: 30px;
+
+        }
+
+        form {
+            position: absolute;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            position: relative;
+            left: 120px;
+            top: 190px;
+            white-space: nowrap;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+            margin-bottom: 50px;
+            margin-left: 100px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 33%;
+            box-sizing: border-box;
+            position: relative;
+            margin-top: 30px;
+        }
+
+        .tooltip {
+            position: absolute;
+            top: -35px;
+            left: 5px;
+            background-color: #2c3e50;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+            display: none;
+        }
+
+        .form-group:hover .tooltip {
+            display: block;
+        }
+
+        small {
+            display: block;
+            margin-top: 39px;
+            color: #777;
+
+            position: relative;
+            right: 139px;
+        }
+
+
+        .radio-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .radio-group label {
+            margin-right: 10px;
+            margin-left: 5px;
+        }
+
+        button {
+            position: relative;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100px;
+            top: 260px;
+            right: 790px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 300px;
+            height: 100px;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: none;
+            position: relative;
+            right: 695px;
+            bottom: 100px;
+        }
+
+        .GST-Reg {
+            position: relative;
+            top: 210px;
+        }
+
+        .GST-Reg p {
+            margin-top: 20px;
+        }
+
+        .GST-Reg h1 {
+            margin-top: 20px;
+        }
+
+        .Filing-fee {
+            width: 1400px;
+            height: 800px;
+            background-color: #e7717d;
+            margin-top: 50px;
+            position: relative;
+            top: 50px;
+
+            white-space: nowrap;
+        }
+
+        .list-container {
+            padding: 20px;
+            margin-left: 50px;
+            list-style-type: disc;
+            line-height: 2;
+            color: white;
+        }
+
+
+        .return {
+            font-size: 35px;
+            margin: 0px 0px 0px 30px;
+            padding: 50px 0px 20px;
+            color: white;
+            border-bottom: 2px solid white;
+            width: 550px;
+        }
+
+        .book-btn {
+            width: 150px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            margin: 20px 0px 0px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            cursor: pointer;
+
+        }
+
+        .GST-Fea {
+            margin-top: 50px;
+
+            position: relative;
+            top: 250px;
+        }
+
+        .GST-Fea p {
+            margin-right: 70px;
+            margin-top: 10px;
+            white-space: wrap;
+            line-height: 2;
+
+        }
+
+        .GST-Fea h1 {
+            margin-top: 20px;
+        }
+
+        strong {
+            white-space: wrap;
+            line-height: 2;
+            margin-top: 50px;
+        }
+    </style>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">
+                <div class="logo">MY Wealth</div> 
+               </a>
+            <ul class="nav-links">
+                <li><a href="ITF.html">Income Tax Filling</a></li>
+                <li><a href="Consultancy.html">Book Consultancy</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Popular Services &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="ITF.html">ITR Filing Services</a>
+                        <a href="ISO.html">ISO Certification</a>
+                        <a href="GSTReg.html">GST Registration</a>
+                        <a href="GSTFilling.html">GST Return Filing</a>
+                        <a href="MSME.html">MSME Registration</a>
+                        <a href="companyreg.html">Company Registration</a>
+                        <a href="firm.html">Firm Registration</a>
+                        <a href="fssai.html">FSSAI License</a>
+                        <a href="trademark.html">Trademark Registration</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Bussiness Registration &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="companyreg.html">Company Registration</a>
+                        <a href="firm.html">Firm Registration</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">GST Services &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="GSTReg.html">GST Registration</a>
+                        <a href="GSTFilling.html">GST Return Filing</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Support &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="#">Contact Us</a>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+    </header>
+
+    <div class="main-center">
+        <div class="ICT">
+            <p>Trademark Registration Online
+
+
+            </p>
+            <p class="p2"> India’s Only Govt Certified Portal to get done Trademark Registration Online <br>
+                Package Start From Just 6800/- INR (All Inclusive) </p>
+            <div class="ICT-btn" onclick="scrollToSection()">
+                GET PROPOSAL &#9654
+            </div>
+
+        </div>
+    </div>
+
+
+    <h1 style="margin: 20px 0px 0px 30px;">What is Trademark Registration ?
+
+
+
+    </h1>
+    <p style="margin-left: 30px; margin-right: 30px;">Trademark is very Important for any business or brand in India.
+        Each any type of the business who’s want to secure their brand name and logo of the company, they have to must
+        go for trademark registration in India. Trademark Registry gives the protection on each brand name with the logo
+        in their respective trademark class. <br> <br>
+
+        There are 45 Trademark classes where you can register your brand name in the type of the field which is related
+        to your business or where you want to protect the brand or trade name. Remember if you want to protect your
+        design or idea or product or service then you can go with Patent Registration or if you want to protect your
+        design then you can go with the Copyright Registration.​
+
+
+
+    </p>
+
+    <h1 style="margin: 20px 0px 0px 30px;">Why is Trademark Registration Required for Business ?
+
+
+    </h1>
+    <p style="margin-left: 30px;">There are a lot of the benefits and reason to register your brand name with the logo
+        as a trademark in India which are the following :- <br><br>
+
+        - Secure your brand or company name so anyone (competitors) can’t use a similar brand name. <br>
+        - Give protection on the brand name so other companies can’t use your brand name without your permission. <br>
+        - It helps you to protect your existing customer by showing a fake similar brand name. <br>
+        - If you are internet based startup then it gives you protection on the Domain Name like www.xyz.com etc. <br>
+        - If you are selling the products on the e-commerce website such as Flipkart or Amazon or paytm etc then it
+        gives
+        you different identity between other sellers.
+        - Its help you to register a private limited company with the same brand name.
+
+    </p>
+
+
+
+    <div class="Filing-fee">
+        <div class="return">
+            Trademark Registration Cost or Fee
+
+
+
+
+
+        </div>
+        <p
+            style="color: white; white-space: wrap; margin-left: 40px;margin-right: 100px; margin-top: 20px; line-height: 2;">
+            Trademark Registration have 2 types of fees or Cost :- <br>
+            a) Government Fee <br>
+            b) Registered Trademark Attorney Fee <br>
+
+            <strong style="color: white; white-space: wrap;  margin-top: 20px; line-height: 2;">
+                a) Government Fee </strong> is
+            4500/- INR for the same for the One Class of the trademark. its include your trade name with the logo.
+            so always choose the right trademark class before the filings <br> <br>
+
+            <strong style="color: white; white-space: wrap;  margin-top: 20px; line-height: 2;">
+                b) Registered Trademark Attorney Fee – </strong> it’s very professional to professional. You always have
+            to file the trademark with the registered trademark attorney. if we are talking about the market price then
+            professional are charge nearby 2000/- to 3000 INR for the same.
+
+        <p
+            style="color: white; white-space: wrap; margin-left: 40px;margin-right: 100px; margin-top: 20px; line-height: 2;">
+            We at MyWealth Offers to you awesome package for Trademark Registration Just at 6799/- INR
+
+        </p>
+
+        <strong style="color: white; white-space: wrap; margin-left: 40px;  margin-top: 40px; line-height: 2;">Package
+            Includes :
+
+        </strong>
+        <p
+            style="color: white; white-space: wrap; margin-left: 40px;margin-right: 100px; margin-top: 20px; line-height: 2;">
+            - Consultation on Choose the Right Trademark Class and save your cost. <br>
+            - Consultation on Brand Registration Law & regulations. <br>
+            - Preparation of the Search Report on Trademark <br>
+            - Preparation and filings of a Trademark application with the logo registration <br>
+            - Delivery of Valid Trademark Acknowledgement & Regular updates on proceedings.​</p>
+
+        ​
+        <div class="book-btn" onclick="scrollToSection()">
+            BOOK NOW
+        </div>
+
+
+
+        <div id="book1" class="form-main">
+            📅 Book Free Consultation Right Now
+
+
+        </div>
+
+        <div class="form-box">
+            <div class="form-ITF">
+                <div class="form-header">
+                    <h2>Trademark/Brand Registration Form
+                    </h2>
+                    <p>
+                        Fill up your Application and Get Connect with us
+                    </p>
+                </div>
+
+                <form>
+                    <div class="form-group">
+                        <label for="name" style="position: relative; left: 185px;">Name<span> * <style {color:red}>
+                                </style>
+                        </label> <br>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        <small></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" style="position: relative; left: 185px;">Email<span> * <style {color:red}>
+                                </style></label>
+                        <input type="email" id="email" name="email" placeholder="Enter valid email-ID" required>
+                        <div class="tooltip">Your Email Please where you need the proposal</div>
+                        <small></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact" style="position: relative; left: 185px;">Contact Number<span> * <style
+                                    {color:red}>
+                                </style></span></label>
+                        <input type="text" id="contact" name="contact" placeholder="Enter your MOB Number" required>
+                        <br>
+                        <small></small>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="contact" style="position: relative; left: 185px;">Nature of Bussiness<span> * <style
+                                    {color:red}>
+                                </style></span></label>
+                        <input type="text" id="contact" name="contact" placeholder="Type your brand name" required>
+                        <br>
+                        <small></small>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="form-group">
+                        <label style="position: relative; left: 185px;">Do you know about Trademark Class <span> *
+                                <style {color:red}>
+                                </style></label>
+                        <div class="radio-group">
+                            <input type="radio" id="yes" name="whatsapp" value="yes">
+                            <label for="yes">Yes</label>
+                            <input type="radio" id="no" name="whatsapp" value="no">
+                            <label for="no">No</label>
+
+
+
+
+
+
+
+
+                            <div class="form-group">
+                                <label for="requirements"
+                                    style="position: relative; right: 635px; bottom: 100px; font-size: 16px;">About your
+                                    <br> Business
+                                    <span> * <style {color:red}></style></label>
+                                <textarea id="requirements" placeholder="Let us know your nature of business
+                                    "></textarea>
+
+
+
+
+                            </div>
+
+
+                            <button type="submit">Submit</button>
+                </form>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>document.body.style.overflowX = 'hidden';</script>
+
+    <div class="GST-Fea">
+
+
+        <h1>Trademark Registration Online is Possible
+
+
+
+
+        </h1>
+        <p>Yes, Now Trademark Registry have their own dedicated govt portal which simplified the Trademark Registration
+            Online.They have a standard procedure for the trademark registration but it’s difficult if you are not aware
+            with the Trademark Class or Trade name rules or Digital Signature etc. In that case we at MyOnlineCA Helps
+            you to get done your Trademark Registration at the lowest cost with the Trademark Govt Certified Attorney.
+
+        </p>
+
+        <h1>Benefits of the Online Trademark Registration over Offline Trademark Registration
+
+        </h1>
+        <p>- Lowest Fee or Cost to get done the Trademark registration <br>
+            - Not required to visit anywhere govt department or office. <br>
+            - Track application status online easily. <br>
+            - Easily Resubmission or changes of the trademark online
+            - Easily reply on the Trademark Objection <br>
+            - Download the Trademark Certificate Online <br>
+            - Easily preparation of the Trademark Search Report. <br></p>
+
+
+
+
+
+
+        <h1>Documents required for Trademark Registration
+
+
+        </h1>
+        <p>Following Documents are required for the Trademark Registration in India – <br>
+            a) Pan Card Copy of the Personal | Company or Firm Name. <br>
+            b) Address Proof like Aadhar Card Copy or Voter id or Passport etc. <br>
+            c) Trademark Authority Letter (Format provided by trademark attorney during registration) <br>
+            d) any registration certification if have on the company or firm name. <br>
+
+        </p>
+
+        <h1>Information Required during Trademark Registration
+
+
+        </h1>
+        <p>During the Trademark Registration below are some important information is required for the Trademark
+            Registration
+
+        </p>
+
+        <strong>1) Applicant Name –</strong> you can register as an individual or any Pvt ltd or llp or partnership or
+        proprietorship firm name. <br>
+        <strong>2) Business Type – </strong> you have to mention the type of business like a trader or manufacturer or
+        service provider. <br>
+        <strong>3) Business nature –</strong> you have to mention the short info about the products or services.
+        Trademark registration always depends on the class so you have to choose a proper <br> class as per your
+        business
+        products or services. <br>
+        <strong>4) Brand or Company Name –</strong> you have to provide your Brand Name which is using to provide
+        services or products to the customers. <br>
+        <strong> 5) Logo (Optional) – </strong> if you have any logo of the company then you can provide png or jpeg
+        image file of the logo during the trademark registration. <br>
+        <strong>6) Business Official Communication Address-</strong> you have to provide the communication address which
+        can be used to communicate with the govt officials letter or any other <br> things.
+
+
+        <h1>Benefits of Trademark Registration
+
+
+        </h1>
+        <strong>Increase the Trustworthiness of Business</strong>
+        <p>If you are running a new business and your brand name & logo are trademarks protect with ™ word then its
+            provide to you more brand value & trust authority between the customers.</p>
+
+
+        <strong> File a Case against any Competitors </strong>
+        <p> If you have some awesome unique business proposition and other competitors are try to copy your brand
+            identity or selling duplicate things on your name, then you can simply stop them by trademark registry.</p>
+
+
+        <strong>Increase your Brand Value or Asset
+        </strong>
+        <p> Trademark is treat as Company or Firm Assets so if you make any expenses to secure your brand then it’s not
+            called expenses, these covered under the investment indirectly because it’s your company valuable assets,
+            because when you sell your business to another’s then buyer party will provide to you money for your Brand
+            value or Trademark.
+        </p>
+
+
+        <strong>
+            Protect your unique identity of the brand</strong>
+        <p> Trademark registration gives you unique identity for your brand so if you have a lot of the products under
+            your company then due to trademark registration it gives you unique identity for your all the products. For
+            Ex HUL , P&G have several products but HUL and P&G both are trademarks of their own company so it gives them
+            unique identity between the customers.
+
+        </p>
+
+
+        <strong> Protection of the Digital Assets
+        </strong>
+        <p> Trademark registration provides the protection on the domain name also with the Logo. so let’s suppose if
+            you have one extension of a domain like .in ( for Indian domain’s) then on the basis of the trademark you
+            can also restrict the use of another extension like (.com or .org or .pk etc). So ultimately it also
+            protects your digital assets of the company.
+
+        </p>
+
+
+
+        <strong> Working as PR for the Company
+        </strong>
+        <p> Trademark Registration provides a ™ word in the starting to use before the brand name or company name so
+            it’s also working as a PR Tool for the company. Whether you are publishing any newspaper advertisement or
+            digital marketing campaign or any other, your Logo always shows with the ™ word so it creates the bigger
+            image between the customer & work as PR for your company.
+
+        </p>
+
+
+
+        <strong> Helps in Online ECommerce Portal
+
+        </strong>
+        <p>
+            Trademark Registration gives you initial temporary protection so if you are new ecommerce business which
+            wants to sell the Products on Flipkart or Amazon etc, then these companies always asking the trademark
+            registration certificate from the sellers.
+
+
+        </p>
+
+
+
+        <strong>Global Protection of the Brand
+
+        </strong>
+
+        <p> In the future if your brand becomes a global sensation then trademark gives you more power to increase your
+            business all over the world. So you can file the trademark in other countries also and increase your
+            acceptance of chance because you have already registered a trademark in India. Similar vise versa foreigner
+            can register the trademark in India.
+
+
+
+        </p>
+        <h1>Trademark Registration Process
+        </h1>
+        <p>Trademark Registration Process is Now Online in India. so you have not required to visit any trade mark
+            registry office. You have to just fill the Online application with the help of Registered Trademark attorney
+            with the government of India. <br>
+            Following are Process to Register an Online Trademark Registration :- <br></p>
+
+        <strong>Phase 1 – Initial Registration Process for Trademark Registration in India
+
+        </strong>
+
+        <p>a) Prepare basic documents and brand logo regarding the Trademark Registration. <br>
+            b) File the TM Application Form with Government Fee & attached your representative trademark lawyer digital
+            signature. <br>
+            c) Pay the Government fee via debit card or net banking. <br>
+            d) Get the final acknowledgement receipt and use “TM” before your brand name. <br></p>
+
+        <strong>Phase 2 – Examination Report on Trademark Registration
+
+        </strong>
+        <p> Now after the 3-12 months of the filing of the application, Trademark registry department examination the
+            trade
+            name & logo in accordance with the provision of trademark act. then if an object is raised then an objection
+            report has been issued by the department and provide a time for the reply on the objection with the evidence
+            of
+            the documents.</p>
+
+        <strong>Phase 3- Trademark Publication
+
+        </strong>
+        <p>after the reply to the above objection report, trademark registry is satisfied with the reply then go ahead
+            for the trademark publication and advertising the brand name in trademark journal of India.
+
+        </p>
+
+        <strong>Phase 4- Opposition on Trademark Registration
+
+        </strong>
+        <p>Now if your some other person or company have an objection on that trademark then he can file an objection
+            again from the 4 months after the trademark publication with the documents.
+
+        </p>
+
+        <strong>Final Trademark Registration Certificate –
+
+        </strong>
+
+        <p>if no one file the opposition again the respective trademark then authority issued a final Trademark
+            Registration Certification which is valid for the 10 years from the date of the filings.
+
+        </p>
+
+        <h1>Brand Registration or Logo Registration or Trademark Registration are the Same ?
+        </h1>
+        <p>Yes, these terms usually only for the Trademark Registration. Brand Registration or Logo Registration is
+            equal to the Trademark Registration. So once you got the trademark certificate then your brand & logo both
+            are registered for the same.
+
+        </p>
+
+        <h1>Type of Trademark Symbols under Trademark Registration
+        </h1>
+
+        <p>R Symbol of the Trademark – It refers to permanent protection for the trademark or brand name. You can refer
+            this symbol on your Logo only after the getting final trademark registration certificate.
+        </p>
+
+        <p>™ Symbol of the Trademark – It refers to the temporary protection in respect of trademark. You can start this
+            symbol just only after the submission of the trademark application. It also refers to the unregistered
+            trademark. It gives only warning to other’s regarding the copy of the logo or brand name.
+
+        </p>
+
+        <h1>Can I Register mySelf Trademark Registration Online
+        </h1>
+
+        <p>No, because it’s required the expertise in the trademark law or act. You have to know about the trademark
+            class & their depth knowledge about the categories. Apart from this you need the digital signature (DSC).
+            even trademark registry appointed authorised trademark attorney and agent so if you take the help from them,
+            then you will get the benefits like a subsidy in govt fee & consultation on trademarks.
+
+        </p>
+        <h1>How MyWealth Helps us for Trademark Registration Online
+        </h1>
+
+        <p>MyWealth India’s leading online legal service provider company. Its serve more than 100+ Startups or
+            companies per month across India. We know that when an entrepreneur start a business in India, it’s very
+            difficult to get done all the legal task so quickly at the lowest cost so we at MyWealth Brings
+            technology-driven platform where you can get Online Trademark Registration at fingertips. We Choose some of
+            the best Trademark Attorney across India who charges the lowest professional fee.
+
+        </p>
+
+        <strong>Its Works in simple 3 Steps –
+
+        </strong>
+        <p>1) Just place a request here with your basic details <br>
+            2) Pay the Professional Fee Only 1999/- INR Online via cards/upi/netbanking <br>
+            3) Get Instant Confirmation via Email/Call from Trademark Attorney & discuss the things.</p>
+
+
+
+        <h1>Major Difference between Trademark or Logo or Brand Registration ?
+        </h1>
+        <p>If we talk about the Brand Registration or Logo Registration then its equal to the trademark registration,
+            people are always confused with the terms brand registration or logo registration but it is not different
+            from Trademark Registration.
+
+        </p>
+
+        <h1>What is the Trademark Classification or Class ?
+        </h1>
+        <p>There are 45 Class in the Trademark Act. So you have to choose the right trademark class as per your product
+            or service. For ex – myonlineca is a leading legal service provider company which deals in trademark
+            registration & other legal services so we have to Choose the legal services sector in the trademark class
+            which are 45 related to the legal & security services.
+
+        </p>
+        <p>Here is the summary of the Trademark Class.
+
+        </p>
+        <h1>How to do Trademark Search in India for Online Registration ?
+        </h1>
+        <p>A Good Trademark attorney always provides to your search report before the filing of the trademark
+            application. Because if you do not choose the proper brand name or class then there is a chance that your
+            application will be rejected for the same.
+
+        </p>
+
+        <strong>A trademark search can be done in simple 2 steps –
+
+        </strong>
+        <p>1) Go to the official Trademark registry site <br>
+            2) Insert your brand name & choose the proper class so you will get the results with a similar brand or
+            logo. <br> <br>
+
+            Always remember Trademark attorney has authorised agent login on the govt portal so they can easily search &
+            prepare the report with their expert knowledge so always get done trademark search report from your
+            trademark attorney.?</p>
+
+        <h1>The validity of the Trademark Registration for a Brand
+        </h1>
+
+        <p>Trademark is registered in India at least for 10 years. After the 10 years you have to renew your trademark
+            certificate for the same which is called the trademark renewal. Trademark renewal can be done easily by
+            paying only the renewal fee to the govt.
+
+        </p>
+
+        <h1>Timeline for the Trademark Registration
+        </h1>
+
+        <p>Trademark Registration Application Filings takes minimum 3-4 days for the completion. After that you will get
+            the acknowledgement number. If we talk about the getting final trademark registration certificate then it
+            takes min 6-8 month for the same if you are not getting any rejection or trademark objection.
+
+        </p>
+
+        <h1>What is Trademark Objection during the Trademark Registration Process ?
+        </h1>
+
+        <p>Trademark objection is referred to when you are filing your trademark application, after that you got the
+            objection from your competitors or other similar company or brand which are using that name. Sometimes govt
+            officer by default sends the objection report regarding the use of brand name or any other reason which is
+            related to your brand name or logo.
+
+        </p>
+
+        <h1>What is Trademark Objection Reply during Trademark Registration Process?
+        </h1>
+        <p>Once you get the Trademark objection on your application, after that there is a timeline around 30 days to
+            revert on the trademark objection. These timeline very case to case. So in this time period you have to
+            revert on the trademark objection by uploading the proper documents and written revert on stamp paper for
+            the same.
+
+        </p>
+
+        <h1>How to Renew Trademark Registration ?
+        </h1>
+        <p>Trademark Registration is valid for the 10 years so after that you have to renew the trademark registration.
+            Anyone can apply for the renewal of the trademark before the 6 months of the expiry. So you have to pay only
+            the government to prescribe a fee for the trademark renewal.
+
+        </p>
+
+        <h1>The FAQ on the Trademark Registration Online
+        </h1>
+
+        <strong>1) How to Select Good Trademark name for the business ?
+        </strong>
+        <p>While you are starting your first company then you have to must research about your brand name. You have to
+            check out that brand name is available or not or use by any other company or not. Even you have to check out
+            about the domain name availability for the same. You can read here about how to do a brand search in India.
+            <br>
+
+        </p>
+
+        <strong>2) What are the features of the Trademark
+        </strong>
+        <p>In short mainly 3 features of the trademark registration – <br>
+            Unique Brand Identity <br>
+            Secure or Protect your Brand Name <br>
+            Increase your truth authority</p> <br>
+
+
+        <strong>3) Who are the qualified for the Trademark Registration ?
+        </strong>
+        <p>Trademark can be registered by any person, even foreigner can register the trademark in India. So there is no
+            qualification for the trademark registration.
+
+        </p>
+
+        <strong>4) Who can take the benefits from Registered Trademark ?
+        </strong>
+        <p>Trademark owner or individual or sole proprietor takes the benefits from the trademark registration. They can
+            easily sell trademark value to buyer party for the same.
+
+        </p>
+
+        <strong>5) Correction or Changes are possible in Trademark application after Filings ?
+        </strong>
+        <p>Yes, it’s possible. If you are filing Trademark Online with myonlineca then you can do it change or
+            correction on later stage by submitting a correction trademark form for the same.
+
+        </p>
+
+        <strong>6) Can trademark registry remove the trademark from the registry ?
+        </strong>
+
+        <p>Yes, they are an appointment to maintain the trademark registrar. So if your trademark is not qualified with
+            the govt terms or not getting any reply on the objection report then yes they can remove the trademark or
+            cancel the same.
+
+        </p>
+        <strong>7) What is the most important thing in a Trademark application ?
+        </strong>
+        <p>Brand name word or logo and Class is the most important factor in the trademark application. So you have to
+            take care of this before filing the trademark application.
+
+        </p>
+        <strong>8) Is the logo included in the trademark registration ?
+        </strong>
+        <p>Yes, logo or tag line is included into the trademark registration but the design is not registered with the
+            trademark. For the Design you have to require the Copyright Registration.
+
+        </p>
+        <strong>9) Protection of domain name can be possible with the Online Trademark Registration ?
+        </strong>
+        <p>Yes, it’s possible to protect the domain name with the Trademark Registration.
+
+        </p>
+        <strong>10) Can I protect my idea with the Trademark Registration ?
+        </strong>
+        <p>The idea can’t be protected with the trademark, you can go with the Patent Registration in that case.
+            Trademark is related only with the brand’s names.
+
+        </p>
+
+</body>
+
+<script>
+    function scrollToSection() {
+        const section = document.getElementById('book1');
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</html>
